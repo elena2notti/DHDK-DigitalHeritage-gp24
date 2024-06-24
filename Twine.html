@@ -9,28 +9,162 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play DIGITAL HERITAGE PROJECT.</tw-noscript></noscript></tw-story>
-<tw-storydata name="DIGITAL HERITAGE PROJECT" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="97C5F1F5-0A92-4688-8333-D4B871421FD1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="PTOLEMAIC ROMAN PERIOD - NECTANEBO RELIEF" tags="" position="200,150" size="100,100">(set: _comment to &quot;START&quot;)
-&lt;style&gt;
-.background {
-    background-image: url(&#39;relief.jpg&#39;);
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+<tw-storydata name="DIGITAL HERITAGE PROJECT" startnode="16" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="97C5F1F5-0A92-4688-8333-D4B871421FD1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story
+{
+font-family: Courier;
+font-size: 30px;
+background-color: transparent
 }
-&lt;/style&gt;
 
-&lt;div class=&quot;background&quot;&gt;
-Welcome to the Mystery of the Pharaoh&#39;s Game!
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-Explore ancient symbols and guardians to uncover a hidden message from Pharaoh Nectanebo I.
+/* Style for all texts inside passages */
+tw-passage {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.6;
+    margin: 20px;                     /* Margin around passages */
+    padding: 10px;                    /* Padding inside passages */
+    background-color: rgb(4 15 42 / 72%); /* Background with some transparency */
+    border-radius: 8px;               /* Rounded corners */
+}
 
-[[Get started-&gt;Symbols Matching Game]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Symbols Matching Game" tags="" position="50,475" size="100,100">&lt;span style=&quot;color: #2adbdb;&quot;&gt;[&#39;&#39;Symbols Matching Game&#39;&#39;]&lt;/span&gt;
+
+
+/* ----------- LINKS STYLE -------- */
+
+/* Default link appearance */
+tw-link {
+  font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #ffff;        /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold;     /* Bold text */
+    padding: 5px 10px;     /* Padding around the link */
+    border-radius: 5px;    /* Rounded corners */
+    background-color: #dec507; /* Light grey background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for links */
+tw-link:hover {
+    color: #0056b3;             /* Darker blue on hover */
+    background-color: #d6d8db;  /* Slightly darker grey on hover */
+    text-decoration: none;
+}
+
+/* Visited link appearance */
+tw-link.visited {
+    color: #6c757d; /* Gray color for visited links */
+}
+
+/* Active link appearance */
+tw-link:active {
+    color: #004085;         /* Darker blue on click */
+    background-color: #c6c8ca; /* Darker grey on click */
+}
+
+/* Focused link appearance */
+tw-link:focus {
+    outline: none;          /* Remove default outline */
+    box-shadow: 0 0 0 2px #80bdff; /* Custom focus outline */
+}
+
+tw-story
+
+
+/* -------- next-button class currently not used ---------- */
+
+
+.next-button {
+    background-color: #dec507;  /* Next button background */
+    border: none;              /* Remove default border */
+    color: #fff important!;             /* White text */
+    padding: 10px 20px;        /* Padding for size */
+    text-align: center:        /* Center the text */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Inline-block for proper sizing */
+    font-size: 16px;           /* Font size */
+    margin: 4px 2px;           /* Small margin */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 8px;        /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.next-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);    /* Slightly larger on hover */
+}
+
+.next-button:active {
+    background-color: #1e7e34; /* Even darker green on click */
+    transform: scale(1);       /* Reset scale on click */
+}
+
+.next-button:focus {
+    outline: none;             /* Remove focus outline */
+    box-shadow: 0 0 0 2px #80c784; /* Custom focus outline */
+}
+
+
+/* Example of styling the back arrow link */
+a.back {
+    color: #fff;  /* Text color */
+    background-color: #007bff;  /* Background color */
+    padding: 5px 10px;  /* Padding around the link */
+    border-radius: 4px;  /* Rounded corners */
+    text-decoration: none;  /* Remove underline */
+}
+
+a.back:hover {
+    background-color: yellow;  /* Darker background color on hover */
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Shadows+Into+Light&display=swap');
+
+tw-passage[tags~="speech"] {
+position: absolute;
+left: 3%;
+right: 65%;
+top: 6%;
+bottom: 5%;
+  	text-align: center;
+ 	font-family: "Merienda", cursive !important;
+  	font-optical-sizing: auto;
+  font-style: normal;
+    font-size: 25px !important;              
+    color: #fff; 
+    line-height: 2.2;
+    margin: 20px;                     /* Margin around passages */
+    padding: 10px;                    /* Padding inside passages */
+    background-color: transparent;
+    border-radius: 8px; 
+
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="game welcoming" tags="game_starts" position="1125,850" size="100,100">Welcome to the Mystery of the Pharaoh&#39;s Game!
+
+Explore ancient symbols and guardian-demons to uncover a hidden message from Pharaoh Nectanebo I.
+
+[[Get started-&gt;Drawing Identification puzzle]]
+</tw-passagedata><tw-passagedata pid="2" name="Symbols Matching Game" tags="" position="1825,625" size="100,100">&lt;span style=&quot;color: #2adbdb;&quot;&gt;[&#39;&#39;Symbols Matching Game&#39;&#39;]&lt;/span&gt;
+Look carefully at the symbols on this precious artifact.
 
 Match the hieroglyphs with their meanings to reveal part of the hidden message.
 
@@ -53,30 +187,27 @@ tw-hook[name=&quot;right&quot;] {
   text-align: right;
 }
 &lt;/style&gt;
-(set: _comment to &quot;Symbols Matching Game Result&quot;)
+(set: $matching to false)
 Great job! You&#39;ve matched all the symbols. 
 
 Now you can discover a part of the Pharaoh&#39;s secret message.
 
 Go to the [[next passage-&gt;All the matches are done]]
 
-</tw-passagedata><tw-passagedata pid="3" name="Symbols Matching Game Correct?Sun Disk" tags="" position="275,825" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="Symbols Matching Game Correct?Scarab" tags="" position="175,725" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Symbols Matching Game Correct?Ankh" tags="" position="50,675" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Symbols Matching Game Correct?Feather" tags="" position="400,925" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="life" tags="" position="450,375" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="truth" tags="" position="575,375" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="transformation" tags="" position="700,375" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="protection" tags="" position="825,375" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="All the matches are done" tags="" position="300,300" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
+</tw-passagedata><tw-passagedata pid="3" name="Symbols Matching Game Correct?Sun Disk" tags="" position="2100,450" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="Symbols Matching Game Correct?Scarab" tags="" position="2100,575" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Symbols Matching Game Correct?Ankh" tags="" position="2100,700" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Symbols Matching Game Correct?Feather" tags="" position="2100,300" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="All the matches are done" tags="" position="1825,825" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
 
-Arrange the hieroglyphs in the right order to reveal a part of the 
-(link: &quot;hidden message:&quot;)[
+Arrange the hieroglyphs in the right order to reveal the 
+(link: &quot;Hidden Message:&quot;)[
   You found the solution!
-  (goto: &quot;Hidden message&quot;)
-]</tw-passagedata><tw-passagedata pid="12" name="Hidden message" tags="" position="500,225" size="100,100">(set: _comment to &quot;first part of the message&quot;)
-&quot;The Pharaoh thanks the gods for [[life]], [[truth]], [[transformation]], and [[protection]].&quot;
-
-Go to the [[next passage-&gt;Drawing Identification puzzle]]</tw-passagedata><tw-passagedata pid="13" name="Drawing Identification puzzle" tags="" position="325,475" size="100,100">:: Drawing Identification Puzzle
+  (goto: &quot;Hidden Message&quot;)
+]</tw-passagedata><tw-passagedata pid="8" name="Drawing Identification puzzle" tags="" position="1375,850" size="100,100">:: Drawing Identification Puzzle
 Identify the guardian demons based on their animal heads and corresponding descriptions.
 
 Guardians:
-- Lion Headed Demon
-- Open-Jawed Crocodile Demon
-- Closed-Jawed Crocodile Demon
-- Three-Headed Snake Demon
+- Lion Demon Guardian
+- Open-Jawed Crocodile Demon Guardian
+- Closed-Jawed Crocodile Demon Guardian
+- Three-Headed Snake Demon Guardian
 
 Descriptions:
 - [[Protects Pharaoh in battles and healing.|Drawing Identification Correct?Lion]]
@@ -85,7 +216,7 @@ Descriptions:
 - [[Guardian with three snake heads, symbolizing vigilance.|Drawing Identification Correct?Three-Headed Snake]]
 
 :: Drawing Identification Correct?Lion
-You matched Lion Headed Demon correctly! Click [[here|Drawing Identification Result]] to continue.
+You matched Lion Demon correctly! Click [[here|Drawing Identification Result]] to continue.
 
 :: Drawing Identification Correct?Open-Jawed Crocodile
 You matched Open-Jawed Crocodile Demon correctly! Click [[here|Drawing Identification Result]] to continue.
@@ -96,22 +227,292 @@ You matched Closed-Jawed Crocodile Demon correctly! Click [[here|Drawing Identif
 :: Drawing Identification Correct?Three-Headed Snake
 You matched Three-Headed Snake Demon correctly! Click [[here|Drawing Identification Result]] to continue.
 
-:: Drawing Identification Result
-Well done! You have identified all the guardians. 
+</tw-passagedata><tw-passagedata pid="9" name="Drawing Identification Correct?Lion" tags="" position="1200,1100" size="100,100">Lion Demon Guardian
 
-Go to the [[Hidden Message]] to reveal the Pharaoh&#39;s message.
-</tw-passagedata><tw-passagedata pid="14" name="Drawing Identification Correct?Lion" tags="" position="12.5,1100" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="Drawing Identification Correct?Open-Jawed Crocodile" tags="" position="137.5,1100" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Drawing Identification Correct?Closed-Jawed Crocodile" tags="" position="262.5,1100" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="Drawing Identification Correct?Three-Headed Snake" tags="" position="387.5,1100" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Drawing Identification Result" tags="" position="512.5,1100" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Hidden Message" tags="" position="750,500" size="100,100">:: Hidden Message
+This guardian is a fierce lion. Roar! 
+
+Imagine this lion protecting you with its powerful strength. 
+
+In battles, it helps the pharaoh win and also has magic to heal him when he’s hurt. 
+
+It’s like having a brave superhero on your side!</tw-passagedata><tw-passagedata pid="10" name="Drawing Identification Correct?Open-Jawed Crocodile" tags="" position="1325,1100" size="100,100">Open-Jawed Crocodile Demon
+
+Look at this one! 
+
+It has a crocodile’s head with its mouth wide open. Yikes! 
+
+But don’t be scared. 
+
+This guardian is connected to the god Sobek, who is like a guardian of rivers and farms. It protects the pharaoh from dangers and helps keep everything safe.</tw-passagedata><tw-passagedata pid="11" name="Drawing Identification Correct?Closed-Jawed Crocodile" tags="" position="1450,1100" size="100,100">Closed-Jawed Crocodile Demon
+
+This crocodile guardian has its mouth shut tight. 
+
+It’s like a puzzle because it shows two sides of Sobek—the peaceful, protective side, and the fierce, warrior side. 
+
+It reminds us that sometimes even the scariest things can be good protectors.</tw-passagedata><tw-passagedata pid="12" name="Drawing Identification Correct?Three-Headed Snake" tags="" position="1575,1100" size="100,100">Three-Headed Snake Demon
+
+Whoa! This guardian has three snake heads. 
+
+Imagine how good it is at keeping watch! 
+
+With three heads, it can see danger from any direction and protect the pharaoh day and night. 
+
+It’s like having three sets of eyes always looking out for you!</tw-passagedata><tw-passagedata pid="13" name="Drawing Identification Result" tags="" position="1625,900" size="100,100">FINAL RESULTS
+
+[[Next-&gt;all guardians identified]] </tw-passagedata><tw-passagedata pid="14" name="Hidden Message" tags="" position="2075,950" size="100,100">:: Hidden Message
 Congratulations! You&#39;ve decoded the symbols and identified the guardians.
 
 Here is the hidden message:
 
 &quot;The Pharaoh thanks the gods for life, truth, transformation, and protection.&quot;
 
-Click [[here|Ending]] to finish the game.</tw-passagedata><tw-passagedata pid="20" name="Ending" tags="" position="750,625" size="100,100">:: Ending
+Click [[here|Ending]] to finish the game.</tw-passagedata><tw-passagedata pid="15" name="Ending" tags="" position="2075,1075" size="100,100">:: Ending
 Thank you for playing &quot;Mystery of the Pharaoh&#39;s Game&quot;! 
 
 You have successfully unveiled the hidden message from Pharaoh Nectanebo I.
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="16" name="Introduction to the Artifact" tags="intro-nect" position="900,50" size="100,100">Imagine stepping into a world where powerful kings, known as pharaohs, ruled over a magical land filled with grand temples, giant statues, and mysterious hieroglyphs. 
+
+Today, we’re going to explore a special stone carved artifact that tells us an amazing story from ancient Egypt. 
+
+Meet Nectanebo I, a real-life superhero from over 2,300 years ago!
+
+[[Next-&gt;Pharaoh Nectanebo I]] 
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+&lt;/audio&gt;
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg3.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="17" name="Pharaoh Nectanebo I" tags="" position="1125,50" size="100,100">Nectanebo I was a pharaoh, which means he was like a king but also a bit like a priest. 
+He had a very important job: he needed to talk to the gods and keep his people safe. 
+
+[[Next-&gt;Nectanebo welcoming]]
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg-output.jpg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="18" name="The guardian demons" tags="" position="1125,400" size="100,100">Look at these creatures! 
+
+They might seem scary, but they were actually protectors. 
+
+One has a head like a fierce lion, another has a head like a crocodile with its mouth open, and there’s even one with a crocodile head and three snakes! 
+
+These creatures are called &#39;&#39;GUARDIAN DEMONS&#39;&#39;. 
+
+They helped protect the pharaoh and his kingdom from danger. 
+By giving them gifts, the pharaoh was asking for their help and protection.
+
+Let&#39;s learn more together
+[[Next-&gt;Lion demon]] 
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="19" name="Magic Hieroglyphs" tags="" position="950,400" size="100,100">See those tiny pictures and symbols around the scene? 
+
+Those are hieroglyphs, the ancient Egyptian way of writing. 
+
+They didn’t use letters like we do. Instead, they used pictures! 
+
+These hieroglyphs tell us that the pharaoh was thanking the guardian demons for helping him win battles and keep his people safe. 
+It’s like writing a thank-you card, but way cooler!
+
+Let&#39;s learn more together
+[[Next-&gt;sun]]
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="20" name="wise advise" tags="" position="950,725" size="100,100">Why is this carving important? 
+
+It shows us that even the most powerful people needed help and had to ask nicely for it. The pharaoh, with all his power, still showed respect to the guardians. 
+
+It’s a great reminder that no matter how strong or important we are, it’s always good to be thankful and respectful.
+
+[[Next-&gt;Introduction to the first activity]] 
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/bg2.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="21" name="Introduction to the first activity" tags="" position="875,950" size="100,100">Now, let&#39;s play a game together!
+
+[[PLAY-&gt;game welcoming]]</tw-passagedata><tw-passagedata pid="22" name="sun" tags="" position="750,250" size="100,100">&quot;Re&quot; or &quot;Sun&quot;
+
+Symbol: ☀️// (sun)//
+
+This symbol looks like a big shining circle. 
+&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdIc2HaudJgvYPRa7g0AU--wqIpwStrGbWRQ&amp;s?raw=true&quot; alt=&quot;The symbol of the sun&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+
+It represents the sun, which the ancient Egyptians called &#39;Re&#39;. 
+
+They believed the sun was a powerful god who traveled across the sky every day, bringing light and warmth to everyone.
+
+[[Next-&gt;scarab]]
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/re-sun.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="23" name="scarab" tags="" position="750,375" size="100,100">&quot;Khepri&quot; or &quot;Transformation&quot;
+
+Symbol: 🪲 //(scarab)//
+
+Have you ever seen a beetle pushing a ball of dirt? 
+
+The Egyptians did and thought it was magic! 
+
+This beetle, called &#39;Khepri&#39;, symbolizes transformation and new beginnings because the beetle seemed to create life from nothing.
+
+[[Next-&gt;ankh]]
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scarab.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="24" name="ankh" tags="" position="750,500" size="100,100">&quot;Life&quot;
+
+Symbol: ☥ //(ankh)//
+
+This symbol looks like a key with a loop on top. 
+
+It&#39;s called an &#39;ankh&#39; and it stands for life. 
+
+It was like a good luck charm that people believed could bring them health and happiness.
+
+[[Next-&gt;feather]]
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/ankh.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="25" name="feather" tags="" position="750,625" size="100,100">&quot;Ma&#39;at&quot; or &quot;Truth&quot;
+
+Symbol: 🪶 //(feather)//
+
+This feather represents &#39;Ma&#39;at&#39;, the goddess of truth and fairness. 
+
+The Egyptians believed that when you were honest and did the right thing, you were following Ma&#39;at&#39;s way, making the world a better place.
+
+[[Next-&gt;wise advise]] 
+
+
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/feather.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="26" name="all guardians identified" tags="" position="1575,700" size="100,100">:: Drawing Identification Result
+Well done! You have identified all the guardians. 
+
+Continue to next steps to reveal the Pharaoh&#39;s message.
+
+[[Next-&gt;Symbols Matching Game]] </tw-passagedata><tw-passagedata pid="27" name="relief" tags="" position="1150,225" size="100,100">In this carving, you can see Nectanebo I kneeling down. 
+
+He’s giving beautiful jewels and fabrics to some very strange but fascinating creatures. 
+
+But why is he doing this? Let’s find out!
+
+[[Next-&gt;The guardian demons]]
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+&lt;/audio&gt;
+&lt;style&gt;
+tw-story {
+background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
+background-size:cover;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="28" name="Nectanebo welcoming" tags="speech" position="1325,125" size="100,100">&quot;Welcome, children, to the grand halls of my temple! 
+
+I am Nectanebo I, your pharaoh from ages past. 
+
+In my time, our kingdom thrived under the blessings of the gods, and it is my honor to share with you the wonders of our ancient lands.&quot;
+
+[[Next-&gt;relief]]
+
+&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/nectanebo.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+&lt;/div&gt;
+&lt;audio autoplay&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/1.welcome_necta.mp3?raw=true&quot; type=&quot;audio/mp3&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="29" name="Lion demon" tags="" position="1350,325" size="100,100">&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+
+[[Next-&gt;Crocodile open jaw]] </tw-passagedata><tw-passagedata pid="30" name="intermezzo demoni" tags="" position="1125,550" size="100,100">&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg2.jpeg?raw=true&quot;);
+background-size:cover;
+}
+&lt;/style&gt;
+fine spiegazione demoni
+
+[[Next-&gt;Magic Hieroglyphs]]</tw-passagedata><tw-passagedata pid="31" name="Crocodile open jaw" tags="" position="1550,350" size="100,100">&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/croco-open.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+
+[[Next-&gt;Crocodile close jaw]] </tw-passagedata><tw-passagedata pid="32" name="Crocodile close jaw" tags="" position="1450,500" size="100,100">&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/croco-closed.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+
+[[Next-&gt;Snake]] </tw-passagedata><tw-passagedata pid="33" name="Snake" tags="" position="1300,525" size="100,100">&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/snake-guardian.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+
+[[Next-&gt;intermezzo demoni]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
