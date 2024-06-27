@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play DIGITAL HERITAGE PROJECT.</tw-noscript></noscript></tw-story>
-<tw-storydata name="DIGITAL HERITAGE PROJECT" startnode="16" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="97C5F1F5-0A92-4688-8333-D4B871421FD1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story
+<tw-storydata name="DIGITAL HERITAGE PROJECT" startnode="21" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="97C5F1F5-0A92-4688-8333-D4B871421FD1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story
 {
 font-family: Courier;
 font-size: 30px;
@@ -20,12 +20,13 @@ background-color: transparent
 
 /* Style for all texts inside passages */
 tw-passage {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-family: Courier;
+    font-size: 22px;
+  	font-weight: 700;
     color: #fff;
     line-height: 1.6;
-    margin: 20px;                     /* Margin around passages */
-    padding: 10px;                    /* Padding inside passages */
+    margin: 10px;                     /* Margin around passages */
+    padding: 5px;                    /* Padding inside passages */
     background-color: rgb(4 15 42 / 72%); /* Background with some transparency */
     border-radius: 8px;               /* Rounded corners */
 }
@@ -147,7 +148,6 @@ right: 65%;
 top: 6%;
 bottom: 5%;
   	text-align: center;
- 	font-family: "Merienda", cursive !important;
   	font-optical-sizing: auto;
   font-style: normal;
     font-size: 25px !important;              
@@ -158,119 +158,88 @@ bottom: 5%;
     background-color: transparent;
     border-radius: 8px; 
 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="game welcoming" tags="game_starts" position="1125,850" size="100,100">Welcome to the Mystery of the Pharaoh&#39;s Game!
+}
+
+tw-story[tags~="room"] {
+  background-color: black !important;
+}
+tw-passage[tags~="room"] {
+  font-family: "Roboto", sans-serif !important;
+    font-size: 18px !important;
+  font-weight: 400 !important;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).ready(function() {
+    // Animation function
+    function animateMessage() {
+        // Select the elements to animate
+        var message = $('#animated-message');
+        
+        // Fade in effect
+        message.hide().fadeIn(2000); // Adjust 1000 to control animation speed
+    }
+    
+    // Call animation function when page is fully loaded
+    animateMessage();
+});</script><tw-tag name="room" color="orange"></tw-tag><tw-passagedata pid="1" name="game welcoming" tags="game_starts" position="700,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Welcome to the
+//Mystery of the Pharaoh&#39;s Game//!
 
 Explore ancient symbols and guardian-demons to uncover a hidden message from Pharaoh Nectanebo I.
-
-[[Get started-&gt;Drawing Identification puzzle]]
-</tw-passagedata><tw-passagedata pid="2" name="Symbols Matching Game" tags="" position="1825,625" size="100,100">&lt;span style=&quot;color: #2adbdb;&quot;&gt;[&#39;&#39;Symbols Matching Game&#39;&#39;]&lt;/span&gt;
-Look carefully at the symbols on this precious artifact.
-
-Match the hieroglyphs with their meanings to reveal part of the hidden message.
-
-|left&gt;[&#39;&#39;Hieroglyphs&#39;&#39;:
-- Sun Disk
-- Scarab
-- Ankh
-- Feather] |right&gt;[&#39;&#39;Meanings&#39;&#39;:
-- [[Sun|Symbols Matching Game Correct?Sun Disk]]
-- [[Transformation|Symbols Matching Game Correct?Scarab]]
-- [[Life|Symbols Matching Game Correct?Ankh]]
-- [[Truth|Symbols Matching Game Correct?Feather]]]
 &lt;style&gt;
-tw-hook[name=&quot;left&quot;], tw-hook[name=&quot;right&quot;] {
-  display: inline-block;
-  vertical-align: top;
-  width: 45%; /* Adjust width to fit content */
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg-5output.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
 }
-tw-hook[name=&quot;right&quot;] {
-  text-align: right;
-}
+
 &lt;/style&gt;
-(set: $matching to false)
-Great job! You&#39;ve matched all the symbols. 
-
-Now you can discover a part of the Pharaoh&#39;s secret message.
-
-Go to the [[next passage-&gt;All the matches are done]]
-
-</tw-passagedata><tw-passagedata pid="3" name="Symbols Matching Game Correct?Sun Disk" tags="" position="2100,450" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="Symbols Matching Game Correct?Scarab" tags="" position="2100,575" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="Symbols Matching Game Correct?Ankh" tags="" position="2100,700" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Symbols Matching Game Correct?Feather" tags="" position="2100,300" size="100,100"></tw-passagedata><tw-passagedata pid="7" name="All the matches are done" tags="" position="1825,825" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
-
-Arrange the hieroglyphs in the right order to reveal the 
-(link: &quot;Hidden Message:&quot;)[
-  You found the solution!
-  (goto: &quot;Hidden Message&quot;)
-]</tw-passagedata><tw-passagedata pid="8" name="Drawing Identification puzzle" tags="" position="1375,850" size="100,100">:: Drawing Identification Puzzle
-Identify the guardian demons based on their animal heads and corresponding descriptions.
+&lt;div style=&quot;text-align: center&quot;&gt;[[Play-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Matching guardians puzzle" tags="" position="950,1725" size="100,100">//Identify the demon-guardians based on their animal head and the corresponding description.//
 
 Guardians:
-- Lion Demon Guardian
-- Open-Jawed Crocodile Demon Guardian
-- Closed-Jawed Crocodile Demon Guardian
-- Three-Headed Snake Demon Guardian
+1. Lion Demon-Guardian
+2. Three-Headed Snake Demon-Guardian
+3. Open-Jawed Crocodile Demon-Guardian
+4. Closed-Jawed Crocodile Demon-Guardian
 
 Descriptions:
-- [[Protects Pharaoh in battles and healing.|Drawing Identification Correct?Lion]]
-- [[Symbolizes the protective power of Sobek.|Drawing Identification Correct?Open-Jawed Crocodile]]
-- [[Represents the god&#39;s dual nature.|Drawing Identification Correct?Closed-Jawed Crocodile]]
-- [[Guardian with three snake heads, symbolizing vigilance.|Drawing Identification Correct?Three-Headed Snake]]
+&lt;style&gt;
 
-:: Drawing Identification Correct?Lion
-You matched Lion Demon correctly! Click [[here|Drawing Identification Result]] to continue.
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/background1.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
 
-:: Drawing Identification Correct?Open-Jawed Crocodile
-You matched Open-Jawed Crocodile Demon correctly! Click [[here|Drawing Identification Result]] to continue.
+&lt;/style&gt;
+[[Symbolizes the protective power of Sobek|Open-Jawed Crocodile]]
+[[Guardian symbolizing vigilance|Three-Headed Snake]]
+[[Represents fertility and the protective power of the Nile|Closed-Jawed Crocodile]]
+[[Protects Pharaoh in battles and healing|Lion]]
+</tw-passagedata><tw-passagedata pid="3" name="Hidden Message" tags="" position="1325,1600" size="100,100">&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;Congratulations, you found the solution!
 
-:: Drawing Identification Correct?Closed-Jawed Crocodile
-You matched Closed-Jawed Crocodile Demon correctly! Click [[here|Drawing Identification Result]] to continue.
-
-:: Drawing Identification Correct?Three-Headed Snake
-You matched Three-Headed Snake Demon correctly! Click [[here|Drawing Identification Result]] to continue.
-
-</tw-passagedata><tw-passagedata pid="9" name="Drawing Identification Correct?Lion" tags="" position="1200,1100" size="100,100">Lion Demon Guardian
-
-This guardian is a fierce lion. Roar! 
-
-Imagine this lion protecting you with its powerful strength. 
-
-In battles, it helps the pharaoh win and also has magic to heal him when he’s hurt. 
-
-It’s like having a brave superhero on your side!</tw-passagedata><tw-passagedata pid="10" name="Drawing Identification Correct?Open-Jawed Crocodile" tags="" position="1325,1100" size="100,100">Open-Jawed Crocodile Demon
-
-Look at this one! 
-
-It has a crocodile’s head with its mouth wide open. Yikes! 
-
-But don’t be scared. 
-
-This guardian is connected to the god Sobek, who is like a guardian of rivers and farms. It protects the pharaoh from dangers and helps keep everything safe.</tw-passagedata><tw-passagedata pid="11" name="Drawing Identification Correct?Closed-Jawed Crocodile" tags="" position="1450,1100" size="100,100">Closed-Jawed Crocodile Demon
-
-This crocodile guardian has its mouth shut tight. 
-
-It’s like a puzzle because it shows two sides of Sobek—the peaceful, protective side, and the fierce, warrior side. 
-
-It reminds us that sometimes even the scariest things can be good protectors.</tw-passagedata><tw-passagedata pid="12" name="Drawing Identification Correct?Three-Headed Snake" tags="" position="1575,1100" size="100,100">Three-Headed Snake Demon
-
-Whoa! This guardian has three snake heads. 
-
-Imagine how good it is at keeping watch! 
-
-With three heads, it can see danger from any direction and protect the pharaoh day and night. 
-
-It’s like having three sets of eyes always looking out for you!</tw-passagedata><tw-passagedata pid="13" name="Drawing Identification Result" tags="" position="1625,900" size="100,100">FINAL RESULTS
-
-[[Next-&gt;all guardians identified]] </tw-passagedata><tw-passagedata pid="14" name="Hidden Message" tags="" position="2075,950" size="100,100">:: Hidden Message
-Congratulations! You&#39;ve decoded the symbols and identified the guardians.
+You have finally decoded the symbols and identified the demon-guardians.
 
 Here is the hidden message:
 
-&quot;The Pharaoh thanks the gods for life, truth, transformation, and protection.&quot;
-
-Click [[here|Ending]] to finish the game.</tw-passagedata><tw-passagedata pid="15" name="Ending" tags="" position="2075,1075" size="100,100">:: Ending
-Thank you for playing &quot;Mystery of the Pharaoh&#39;s Game&quot;! 
+&lt;div id=&quot;animated-message&quot;&gt;
+(font:&#39;Papyrus&#39;)[&quot;I, the Pharaoh, honor the divine guardians who shield my reign. In shadows and light, I seek their blessings for wisdom, strength, and the secrets of eternity&quot;]&lt;/div&gt;
+&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/nectanebo.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+&lt;/div&gt;
+&lt;audio autoplay&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/hidden-message-nectanebo.mp3?raw=true&quot; type=&quot;audio/mp3&quot;&gt;
+&lt;/audio&gt;
+To end the game go [[here|Ending]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Ending" tags="" position="1325,1725" size="100,100">Thank you for playing the //Mystery of the Pharaoh&#39;s Game//! 
 
 You have successfully unveiled the hidden message from Pharaoh Nectanebo I.
-</tw-passagedata><tw-passagedata pid="16" name="Introduction to the Artifact" tags="intro-nect" position="900,50" size="100,100">Imagine stepping into a world where powerful kings, known as pharaohs, ruled over a magical land filled with grand temples, giant statues, and mysterious hieroglyphs. 
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/assets/img/final-puzzle.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;
+[[Next-&gt;Treasure Room]]</tw-passagedata><tw-passagedata pid="5" name="Introduction to the Artifact" tags="intro-nect" position="475,925" size="100,100">Imagine stepping into a world where powerful kings, known as pharaohs, ruled over a magical land filled with grand temples, giant statues, and mysterious hieroglyphs. 
 
 Today, we’re going to explore a special stone carved artifact that tells us an amazing story from ancient Egypt. 
 
@@ -288,7 +257,7 @@ background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp2
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="17" name="Pharaoh Nectanebo I" tags="" position="1125,50" size="100,100">Nectanebo I was a pharaoh, which means he was like a king but also a bit like a priest. 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="6" name="Pharaoh Nectanebo I" tags="" position="700,925" size="100,100">Nectanebo I was a pharaoh, which means he was like a king but also a bit like a priest. 
 He had a very important job: he needed to talk to the gods and keep his people safe. 
 
 [[Next-&gt;Nectanebo welcoming]]
@@ -299,13 +268,13 @@ background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp2
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="18" name="The guardian demons" tags="" position="1125,400" size="100,100">Look at these creatures! 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="7" name="The guardian demons" tags="" position="700,1275" size="100,100">Look at these creatures! 
 
 They might seem scary, but they were actually protectors. 
 
-One has a head like a fierce lion, another has a head like a crocodile with its mouth open, and there’s even one with a crocodile head and three snakes! 
+One has a head like a fierce lion, another has a head like a crocodile with its mouth open, another one with a crocodile but with his mouth closed, and there’s even one with a head composed of three snakes! 
 
-These creatures are called &#39;&#39;GUARDIAN DEMONS&#39;&#39;. 
+These creatures are called &#39;&#39;DEMON-GUARDIANS&#39;&#39;. 
 
 They helped protect the pharaoh and his kingdom from danger. 
 By giving them gifts, the pharaoh was asking for their help and protection.
@@ -320,7 +289,7 @@ background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-Digi
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="19" name="Magic Hieroglyphs" tags="" position="950,400" size="100,100">See those tiny pictures and symbols around the scene? 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="Magic Hieroglyphs" tags="" position="525,1275" size="100,100">See those tiny symbols around the scene? 
 
 Those are hieroglyphs, the ancient Egyptian way of writing. 
 
@@ -330,7 +299,7 @@ These hieroglyphs tell us that the pharaoh was thanking the guardian demons for 
 It’s like writing a thank-you card, but way cooler!
 
 Let&#39;s learn more together
-[[Next-&gt;sun]]
+[[Next-&gt;ankh]]
 
 &lt;style&gt;
 
@@ -339,13 +308,13 @@ background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-Digi
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="20" name="wise advise" tags="" position="950,725" size="100,100">Why is this carving important? 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="wise advise" tags="" position="525,1625" size="100,100">Why is this carving important? 
 
 It shows us that even the most powerful people needed help and had to ask nicely for it. The pharaoh, with all his power, still showed respect to the guardians. 
 
 It’s a great reminder that no matter how strong or important we are, it’s always good to be thankful and respectful.
 
-[[Next-&gt;Introduction to the first activity]] 
+[[Next-&gt;match-intro]] 
 
 &lt;style&gt;
 
@@ -354,93 +323,59 @@ background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp2
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="21" name="Introduction to the first activity" tags="" position="875,950" size="100,100">Now, let&#39;s play a game together!
-
-[[PLAY-&gt;game welcoming]]</tw-passagedata><tw-passagedata pid="22" name="sun" tags="" position="750,250" size="100,100">&quot;Re&quot; or &quot;Sun&quot;
-
-Symbol: ☀️// (sun)//
-
-This symbol looks like a big shining circle. 
-&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdIc2HaudJgvYPRa7g0AU--wqIpwStrGbWRQ&amp;s?raw=true&quot; alt=&quot;The symbol of the sun&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
-
-It represents the sun, which the ancient Egyptians called &#39;Re&#39;. 
-
-They believed the sun was a powerful god who traveled across the sky every day, bringing light and warmth to everyone.
-
-[[Next-&gt;scarab]]
-
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="10" name="match-intro" tags="" position="700,1575" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Now, let&#39;s play a game together!
 &lt;style&gt;
-
 tw-story {
-background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/re-sun.jpeg?raw=true&quot;);
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
 background-size:cover;
 background-position: center;
 }
-
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="23" name="scarab" tags="" position="750,375" size="100,100">&quot;Khepri&quot; or &quot;Transformation&quot;
+&lt;/style&gt;
+[[Get started-&gt;game welcoming]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="scarab" tags="" position="350,1225" size="100,100">(set: $findScarb to false)
+&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Khepri&quot; or &quot;Rebirth&quot;]&lt;/div&gt;
 
 Symbol: 🪲 //(scarab)//
+&lt;img src=&quot;https://cdn.britannica.com/97/132897-050-2593000F/Marriage-scarab-Tiy-Amenhotep-III-faience-New-53-bce.jpg?raw=true&quot; alt=&quot;The symbol of the scarab&quot; height=&quot;200&quot;&gt;
 
 Have you ever seen a beetle pushing a ball of dirt? 
 
 The Egyptians did and thought it was magic! 
 
-This beetle, called &#39;Khepri&#39;, symbolizes transformation and new beginnings because the beetle seemed to create life from nothing.
+This beetle, called &#39;Khepri&#39;, symbolizes rebirth and new beginnings because the beetle seemed to create life from nothing.
 
-[[Next-&gt;ankh]]
+[[Next-&gt;Find the scarab]]
 
 &lt;style&gt;
 
 tw-story {
-background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scarab.jpeg?raw=true&quot;);
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/intro-BG.jpeg?raw=true&quot;);
 background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="24" name="ankh" tags="" position="750,500" size="100,100">&quot;Life&quot;
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="12" name="ankh" tags="" position="350,1100" size="100,100">(set: $findAnkh to false)
+&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Life&quot;]&lt;/div&gt;
 
 Symbol: ☥ //(ankh)//
 
+&lt;img src=&quot;https://www.shutterstock.com/image-vector/coptic-cross-ankh-icon-black-600nw-1048522045.jpg?raw=true&quot; alt=&quot;The symbol of the ankh&quot; height=&quot;200&quot;&gt;
+
 This symbol looks like a key with a loop on top. 
 
-It&#39;s called an &#39;ankh&#39; and it stands for life. 
+It&#39;s called &quot;ankh&quot; and it stands for life. 
 
 It was like a good luck charm that people believed could bring them health and happiness.
 
-[[Next-&gt;feather]]
-
+[[Next-&gt;Find the ankh]]
 &lt;style&gt;
 
 tw-story {
-background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/ankh.jpeg?raw=true&quot;);
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/intro-BG.jpeg?raw=true&quot;);
 background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="25" name="feather" tags="" position="750,625" size="100,100">&quot;Ma&#39;at&quot; or &quot;Truth&quot;
-
-Symbol: 🪶 //(feather)//
-
-This feather represents &#39;Ma&#39;at&#39;, the goddess of truth and fairness. 
-
-The Egyptians believed that when you were honest and did the right thing, you were following Ma&#39;at&#39;s way, making the world a better place.
-
-[[Next-&gt;wise advise]] 
-
-
-&lt;style&gt;
-
-tw-story {
-background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/feather.jpeg?raw=true&quot;);
-background-size:cover;
-}
-
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="26" name="all guardians identified" tags="" position="1575,700" size="100,100">:: Drawing Identification Result
-Well done! You have identified all the guardians. 
-
-Continue to next steps to reveal the Pharaoh&#39;s message.
-
-[[Next-&gt;Symbols Matching Game]] </tw-passagedata><tw-passagedata pid="27" name="relief" tags="" position="1150,225" size="100,100">In this carving, you can see Nectanebo I kneeling down. 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="13" name="relief" tags="" position="725,1100" size="100,100">In this carving, you can see Nectanebo I kneeling down in three different scenes. 
 
 He’s giving beautiful jewels and fabrics to some very strange but fascinating creatures. 
 
@@ -455,11 +390,11 @@ tw-story {
 background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
 background-size:cover;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="28" name="Nectanebo welcoming" tags="speech" position="1325,125" size="100,100">&quot;Welcome, children, to the grand halls of my temple! 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="14" name="Nectanebo welcoming" tags="speech" position="900,1000" size="100,100">&lt;div id=&quot;animated-message&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Welcome, children, to the grand halls of my temple! 
 
 I am Nectanebo I, your pharaoh from ages past. 
 
-In my time, our kingdom thrived under the blessings of the gods, and it is my honor to share with you the wonders of our ancient lands.&quot;
+In my time, our kingdom thrived under the blessings of the gods, and it is my honor to share with you the wonders of our ancient lands.&quot;]&lt;/div&gt;
 
 [[Next-&gt;relief]]
 
@@ -467,25 +402,39 @@ In my time, our kingdom thrived under the blessings of the gods, and it is my ho
 &lt;/div&gt;
 &lt;audio autoplay&gt;
   &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/1.welcome_necta.mp3?raw=true&quot; type=&quot;audio/mp3&quot;&gt;
-&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="29" name="Lion demon" tags="" position="1350,325" size="100,100">&lt;style&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="15" name="Lion demon" tags="" position="925,1200" size="100,100">This demon-guardian is fierce with the head of a lion! 
+
+In ancient Egypt, lions symbolized strength and protection, often associated with the goddess Sekhmet. She was known for her protective powers in war and healing. 
+
+The lion-headed demon stands watch, defending against threats and ensuring the safety of the people under its care.
+&lt;style&gt;
 
 tw-story {
-background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/lion.jpeg?raw=true&quot;);
 background-size:cover;
 }
 
 &lt;/style&gt;
+[[Next-&gt;Crocodile open jaw]] </tw-passagedata><tw-passagedata pid="16" name="intermezzo demoni" tags="" position="700,1425" size="100,100">The demon-guardians depicted in these carvings were not just symbols of protection!
 
-[[Next-&gt;Crocodile open jaw]] </tw-passagedata><tw-passagedata pid="30" name="intermezzo demoni" tags="" position="1125,550" size="100,100">&lt;style&gt;
+They represented a deeper relationship between the pharaoh and the divine forces that safeguarded the kingdom. 
+
+Despite the pharaoh&#39;s immense power and authority, these carvings illustrate his humility and reverence towards the guardians who watched over Egypt.
+&lt;style&gt;
 
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg2.jpeg?raw=true&quot;);
 background-size:cover;
 }
 &lt;/style&gt;
-fine spiegazione demoni
 
-[[Next-&gt;Magic Hieroglyphs]]</tw-passagedata><tw-passagedata pid="31" name="Crocodile open jaw" tags="" position="1550,350" size="100,100">&lt;style&gt;
+Now, let&#39;s learn more about the magical symbols surrounding these figures
+[[Next-&gt;Magic Hieroglyphs]]</tw-passagedata><tw-passagedata pid="17" name="Crocodile open jaw" tags="" position="1125,1225" size="100,100">This demon-guardian has the head of a crocodile with its jaw open! 
+
+In ancient Egyptian mythology, the open-jaw crocodile represented the fierce and protective aspect of Sobek, the Nile god. 
+
+It symbolized vigilance against threats and ensured the prosperity and safety of those under its protection.
+&lt;style&gt;
 
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/croco-open.jpeg?raw=true&quot;);
@@ -493,8 +442,12 @@ background-size:cover;
 }
 
 &lt;/style&gt;
+[[Next-&gt;Crocodile close jaw]] </tw-passagedata><tw-passagedata pid="18" name="Crocodile close jaw" tags="" position="1025,1375" size="100,100">This demon-guardian has the head of a crocodile with its jaw closed! 
 
-[[Next-&gt;Crocodile close jaw]] </tw-passagedata><tw-passagedata pid="32" name="Crocodile close jaw" tags="" position="1450,500" size="100,100">&lt;style&gt;
+Crocodiles were revered in ancient Egypt also as symbols of fertility and the protective power of the Nile, associated with Sobek as we said previously. 
+
+The closed-jaw crocodile-headed demon symbolized watchfulness and safeguarded the land and its people from harm.
+&lt;style&gt;
 
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/croco-closed.jpeg?raw=true&quot;);
@@ -502,8 +455,12 @@ background-size:cover;
 }
 
 &lt;/style&gt;
+[[Next-&gt;Snake]] </tw-passagedata><tw-passagedata pid="19" name="Snake" tags="" position="875,1400" size="100,100">This demon-guardian has three heads, each with a serpent! 
 
-[[Next-&gt;Snake]] </tw-passagedata><tw-passagedata pid="33" name="Snake" tags="" position="1300,525" size="100,100">&lt;style&gt;
+Snakes were symbols of protection and regeneration in ancient Egypt, often associated with various deities like the goddess Wadjet. 
+
+The three-snakes headed demon represented the powerful and protective forces that guarded sacred places and ensured the continuity of life and spiritual well-being.
+&lt;style&gt;
 
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/snake-guardian.jpeg?raw=true&quot;);
@@ -511,8 +468,285 @@ background-size:cover;
 }
 
 &lt;/style&gt;
+[[Next-&gt;intermezzo demoni]] </tw-passagedata><tw-passagedata pid="20" name="INTRODUCTION - STORY STARTS" tags="" position="50,425" size="100,100">Once upon a time, in the golden sands of ancient Egypt, lived a brave and curious young boy named Amun. 
 
-[[Next-&gt;intermezzo demoni]] </tw-passagedata></tw-storydata>
+His eyes sparkled like the stars, and his heart beat with the rhythm of adventure.
+
+Amun loved to play in the warm desert, where the mighty pyramids cast long, mysterious shadows. 
+
+One sunny afternoon, he was playing with his favorite red ball, but unfortunately it rolled away and disappeared. 
+
+Amun searched and searched, until he found himself at the mouth of a secret, hidden entrance to a forgotten tomb.
+
+Will Amun dare to enter the mysterious tomb?
+[[Next-&gt;Tomb entrance]]
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+&lt;/audio&gt;
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/tomb-entrance1.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="21" name="Introduction room" tags="room" position="275,450" size="100,100">//You&#39;re in the introduction room.//
+
+Go to the [[Story-&gt;INTRODUCTION - STORY STARTS]]</tw-passagedata><tw-passagedata pid="22" name="Fifth room" tags="room" position="1025,750" size="100,100">//You&#39;re in the fifth room.//
+
+Go to the [[Story-&gt;Introduction to the Artifact]]</tw-passagedata><tw-passagedata pid="23" name="Tomb entrance" tags="" position="275,275" size="100,100">With a deep breath and a spark of excitement, Amun stepped into the cool darkness of the hidden tomb. The air inside felt ancient and magical, as if whispering secrets from a time long ago.
+
+The walls glowed with the flicker of enchanted hieroglyphics, telling stories of gods, treasures, and incredible adventures. Amun&#39;s heart pounded with curiosity and a hint of fear, but his bravery pushed him forward.
+
+Where will Amun’s journey take him next?
+
+[[Next-&gt;Mysterious discovery]]
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(1).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+&lt;/audio&gt;
+&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/video.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Mysterious discovery" tags="" position="50,250" size="100,100">Deeper into the tomb, Amun found himself in a wondrous corridor filled with glowing symbols and ancient carvings. Each step echoed with the whispers of long-lost pharaohs and the rustle of unseen wings.
+
+Suddenly, the ground shimmered beneath his feet, and with a magical flash, Amun was whisked away into a mystical world where time stood still and everything felt dream-like. 
+
+He was now in a parallel dimension, surrounded by mysterious artifacts and twinkling stars that danced in the sky.
+
+What marvels and mysteries await Amun in this enchanted place?
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/introBG.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;
+[[Next-&gt;Enchanted World]]</tw-passagedata><tw-passagedata pid="25" name="Enchanted World" tags="" position="275,125" size="100,100">Amun marveled at the breathtaking sights around him. 
+He saw rivers of gold that flowed gently like liquid sunshine, and trees that sparkled with jewels instead of leaves. Tiny, magical sparkles fluttered around, lighting up the air with a soft, golden glow.
+
+But Amun remembered his mission: to find his lost ball. 
+So he ventured forward.
+
+The ancient hieroglyphics on the walls seemed to come to life, guiding him with hints and clues.
+
+Where will the next clue lead Amun?
+
+[[Next-&gt;FAKE-DOOR]]
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/amun-marv.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="26" name="FAKE-DOOR" tags="" position="575,100" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="New Adventure" tags="" position="1650,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;With his newfound courage and enchanted ball, Amun returned to the sunny sands of Egypt, ready for his next adventure. 
+
+His heart was full of excitement, knowing that there were countless mysteries and treasures waiting to be discovered.
+
+As he walked home, the stars began to twinkle in the sky, promising more magical journeys in the days to come.
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/assets/img/final-exit.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;
+The end… for now.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Treasure Room" tags="" position="1500,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center&quot;&gt;As Amun solved the final puzzle, the walls of the chamber parted to reveal a dazzling treasure room. 
+
+Golden treasures sparkled like a thousand suns, and ancient artifacts glowed with a mysterious light.
+
+In the center of the room, on a pedestal of shimmering silver, was Amun’s lost ball. 
+
+It shone with a magical aura, having absorbed the ancient magic of the tomb. 
+
+Amun picked it up, feeling the warmth of adventure and the joy of discovery.
+
+He was ready to return home finally, his heart full of tales of ancient wonders and magical adventures.
+
+Where will Amun’s adventures take him next?&lt;/div&gt;
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/assets/img/final-puzzle.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;
+[[Next-&gt;New Adventure]]</tw-passagedata><tw-passagedata pid="29" name="Find the ankh" tags="" position="200,1150" size="100,100">Can you find the ankh on the relief?
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
+[[Next-&gt;scarab]]
+&lt;style&gt;
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+&lt;/style&gt;
+(set: $findAnkh to true)</tw-passagedata><tw-passagedata pid="30" name="Find the scarab" tags="" position="200,1275" size="100,100">Can you find the scarab on the relief?
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
+[[Next-&gt;hawk]]
+&lt;style&gt;
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+&lt;/style&gt;
+(set: $findScarb to true)</tw-passagedata><tw-passagedata pid="31" name="hawk" tags="" position="350,1350" size="100,100">(set: $findHawk to false)
+&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Horus&quot; or &quot;The Sky God&quot;]&lt;/div&gt;
+
+Symbol: 🦅 //(hawk)//
+&lt;img src=&quot;https://www.shutterstock.com/image-vector/coptic-cross-ankh-icon-black-600nw-1048522045.jpg?raw=true&quot; alt=&quot;The symbol of the ankh&quot; height=&quot;200&quot;&gt;
+
+Imagine a majestic hawk soaring high in the sky, its sharp eyes watching everything below. 
+This powerful bird represents Horus, the sky god who was believed to protect Egypt. 
+
+Horus, with his head like a hawk, was a mighty and brave god. 
+The Egyptians thought he watched over their pharaohs, guiding and protecting them just like a hawk watches over its nest. 
+
+Every pharaoh was seen as a living Horus, so the hawk also became a symbol of kingship and royal power!
+
+[[Next-&gt;Find the hawk]]
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/hawk.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="32" name="goose" tags="" position="350,1475" size="100,100">(set: $findGoose to false)
+&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Goose with the Sun&quot;]&lt;/div&gt;
+
+Symbol: ☀️🦆
+&lt;img src=&quot;https://i.pinimg.com/originals/fb/12/99/fb129977cd5d839aff3bce32ad196a9a.jpg?raw=true&quot; alt=&quot;The symbol of the ankh&quot; height=&quot;200&quot;&gt;
+
+Look at this friendly duck with the bright sun above! 
+This special symbol stands for the word &quot;son&quot; in ancient Egyptian writing. 
+
+Imagine the sun shining down and the duck waddling happily. It’s like the sun is watching over its little ducklings, just like parents watch over their children. 
+
+The Egyptians used this symbol to write &quot;son&quot; and to make many other words. 
+It’s like the duck and the sun are helping them talk about family and the important people in their lives!
+
+[[Next-&gt;Find the goose]]
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/goose.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="Find the hawk" tags="" position="200,1400" size="100,100">Can you find the hawk on the relief? 
+//Hint:// In the depiction, it is wearing the Pschent, the double crown representing the unification of Upper and Lower Egypt. 
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
+[[Next-&gt;goose]]
+&lt;style&gt;
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+&lt;/style&gt;
+(set: $findHawk to true)</tw-passagedata><tw-passagedata pid="34" name="Find the goose" tags="" position="200,1525" size="100,100">Can you find the goose with the sun on the relief? 
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
+[[Next-&gt;wise advise]]
+&lt;style&gt;
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+&lt;/style&gt;
+(set: $findGoose to true)</tw-passagedata><tw-passagedata pid="35" name="Lion" tags="" position="1125,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+
+You remembered it perfectly: 
+
+The Lion demon-guardian protects the Pharaoh in battles and healing.
+
+Keep up the fantastic work!
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/lion.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+[[Back-&gt;same]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Open-Jawed Crocodile" tags="" position="1000,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+
+You remembered it perfectly: 
+
+The Open-Jawed Crocodile symbolizes the protective power of Sobek. 
+
+Keep up the fantastic work!
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/croco-open.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Closed-Jawed Crocodile" tags="" position="750,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+
+You remembered it perfectly: 
+
+The closed-Jawed Crocodile represents fertility and the protective power of the Nile.
+
+Keep up the fantastic work!
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/croco-closed.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Three-Headed Snake" tags="" position="875,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+
+You remembered it perfectly: 
+
+The Three-Headed Snake demon-guardian symbolizes vigilance, as the powerful and protective forces that guarded sacred places and ensured the continuity of life and spiritual well-being.
+
+Keep up the fantastic work!
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/snake-guardian.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="same" tags="" position="1150,1650" size="100,100">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+//Identify the demon-guardians based on their animal head and the corresponding description.//
+Guardians:
+1. Lion Demon-Guardian: protects Pharaoh in battles and healing.
+2. Three-Headed Snake Demon-Guardian: the guardian symbolizing vigilance.
+3. Open-Jawed Crocodile Demon-Guardian: symbolizes the protective power of Sobek.
+4. Closed-Jawed Crocodile Demon-Guardian: Represents fertility and the protective power of the Nile.
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/background1.jpg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;
+&lt;div style=&quot;text-align: center; font-size: 27px; display: none;&quot;&gt;WELL DONE! 🎉
+
+You have identified all the guardians. 
+
+Continue to next step to reveal the Pharaoh&#39;s message.
+
+[[Next-&gt;Hidden Message]] &lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
