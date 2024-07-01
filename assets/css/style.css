@@ -10,6 +10,10 @@
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@font-face {
+  font-family: 'Papyrus';
+  src: url('../../fonts/papyru-font/papyrus.ttf') format('truetype');
+}
 
 .abril-fatface-regular {
   font-family: "Abril Fatface", serif;
@@ -426,6 +430,14 @@ h6 {
   display: block;
 }
 
+
+/*--------------------------------------------------------------
+# Twine launch
+--------------------------------------------------------------*/
+#twine-acess {
+  font-family: 'Papyrus', sans-serif;
+  font-size: 25px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
