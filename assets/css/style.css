@@ -467,9 +467,9 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 45px;
   color: #fff;
   font-family: "Junge", cursive;
 }
@@ -1141,7 +1141,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cut.jpeg") no-repeat;
+  background: url("../img/cleopatraBG.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;

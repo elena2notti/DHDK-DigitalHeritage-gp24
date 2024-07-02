@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>DIGITAL HERITAGE PROJECT</title>
+<title>DIVE</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 50%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0.25) 0%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play DIGITAL HERITAGE PROJECT.</tw-noscript></noscript></tw-story>
-<tw-storydata name="DIGITAL HERITAGE PROJECT" startnode="21" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="97C5F1F5-0A92-4688-8333-D4B871421FD1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play DIVE.</tw-noscript></noscript></tw-story>
+<tw-storydata name="DIVE" startnode="72" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="97C5F1F5-0A92-4688-8333-D4B871421FD1" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story
 {
 font-family: Courier;
 font-size: 30px;
@@ -167,6 +167,19 @@ tw-passage[tags~="room"] {
   font-family: "Roboto", sans-serif !important;
     font-size: 18px !important;
   font-weight: 400 !important;
+}
+
+
+tw-passage[tags~="elena"] {
+    font-family: Courier;
+    font-size: 22px;
+  	font-weight: 700;
+    color: #fff;
+    line-height: 1.6;
+    margin: 1px;                     /* Margin around passages */
+    padding: 2px;                    /* Padding inside passages */
+background-color: #898886;
+  border-radius: 8px;               /* Rounded corners */
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).ready(function() {
     // Animation function
     function animateMessage() {
@@ -179,7 +192,9 @@ tw-passage[tags~="room"] {
     
     // Call animation function when page is fully loaded
     animateMessage();
-});</script><tw-tag name="room" color="orange"></tw-tag><tw-passagedata pid="1" name="game welcoming" tags="game_starts" position="700,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Welcome to the
+});
+
+</script><tw-tag name="room" color="orange"></tw-tag><tw-tag name="elena" color="purple"></tw-tag><tw-passagedata pid="1" name="game welcoming" tags="game_starts" position="2525,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Help Amun to solve the
 //Mystery of the Pharaoh&#39;s Game//!
 
 Explore ancient symbols and guardian-demons to uncover a hidden message from Pharaoh Nectanebo I.
@@ -192,29 +207,26 @@ background-position: center;
 }
 
 &lt;/style&gt;
-&lt;div style=&quot;text-align: center&quot;&gt;[[Play-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Matching guardians puzzle" tags="" position="950,1725" size="100,100">//Identify the demon-guardians based on their animal head and the corresponding description.//
+&lt;div style=&quot;text-align: center&quot;&gt;[[Play-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Matching guardians puzzle" tags="" position="2125,1825" size="100,100">//Identify the demon-guardians based on their animal head and the corresponding description.//
 
 Guardians:
-1. Lion Demon-Guardian
-2. Three-Headed Snake Demon-Guardian
-3. Open-Jawed Crocodile Demon-Guardian
-4. Closed-Jawed Crocodile Demon-Guardian
+𖦹 Lion Demon-Guardian
+𖦹 Three-Headed Snake Demon-Guardian
+𖦹 Open-Jawed Crocodile Demon-Guardian
+𖦹 Closed-Jawed Crocodile Demon-Guardian
 
-Descriptions:
+Match the four guardians with the following descriptions:
 &lt;style&gt;
-
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/background1.jpg?raw=true&quot;);
 background-size:cover;
 background-position: center;
 }
-
 &lt;/style&gt;
-[[Symbolizes the protective power of Sobek|Open-Jawed Crocodile]]
-[[Guardian symbolizing vigilance|Three-Headed Snake]]
-[[Represents fertility and the protective power of the Nile|Closed-Jawed Crocodile]]
-[[Protects Pharaoh in battles and healing|Lion]]
-</tw-passagedata><tw-passagedata pid="3" name="Hidden Message" tags="speech" position="1325,1550" size="100,100">Here is the hidden message:
+1. [[Symbolizes the protective power of Sobek|Open-Jawed Crocodile]]
+2. [[Guardian symbolizing vigilance|Three-Headed Snake]]
+3. [[Represents fertility and the protective power of the Nile|Closed-Jawed Crocodile]]
+4. [[Protects Pharaoh in battles and healing|Lion]]</tw-passagedata><tw-passagedata pid="3" name="Hidden Message" tags="speech" position="1450,1925" size="100,100">Here is the hidden message:
 &lt;div id=&quot;animated-message&quot;&gt;
 (font:&#39;Papyrus&#39;)[&quot;I, the Pharaoh, honor the divine guardians who shield my reign. In shadows and light, I seek their blessings for wisdom, strength, and the secrets of eternity&quot;]&lt;/div&gt;
 &lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/nectanebo.mp4&quot; type=&quot;video/mp4&quot;/&gt;
@@ -222,7 +234,7 @@ background-position: center;
 &lt;audio autoplay&gt;
   &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/hidden-message-nectanebo.mp3?raw=true&quot; type=&quot;audio/mp3&quot;&gt;
 &lt;/audio&gt;
-To end the game go [[here|Ending]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Ending" tags="" position="1325,1725" size="100,100">Thank you for playing the //Mystery of the Pharaoh&#39;s Game//! 
+To end the game go [[here|Ending]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Ending" tags="" position="1275,1925" size="100,100">Thank you for playing the //Mystery of the Pharaoh&#39;s Game//! 
 
 You have successfully unveiled the hidden message from Pharaoh Nectanebo I.
 &lt;style&gt;
@@ -234,28 +246,11 @@ background-position: center;
 }
 
 &lt;/style&gt;
-[[Next-&gt;Treasure Room]]</tw-passagedata><tw-passagedata pid="5" name="Introduction to the Artifact" tags="intro-nect" position="475,925" size="100,100">Imagine stepping into a world where powerful kings, known as pharaohs, ruled over a magical land filled with grand temples, giant statues, and mysterious hieroglyphs. 
-
-Now, we’re going to explore a special stone carved artifact that tells us an amazing story from ancient Egypt. 
-
-Meet Nectanebo I, a real-life superhero from over 2,300 years ago!
-
-[[Next-&gt;Pharaoh Nectanebo I]] 
-&lt;audio autoplay loop&gt;
-  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
-&lt;/audio&gt;
-
-&lt;style&gt;
-
-tw-story {
-background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg3.jpeg?raw=true&quot;);
-background-size:cover;
-}
-
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="6" name="Pharaoh Nectanebo I" tags="" position="700,925" size="100,100">Nectanebo I was a pharaoh, which means he was like a king but also a bit like a priest. 
+[[Continue-&gt;Treasure Room]]</tw-passagedata><tw-passagedata pid="5" name="Pharaoh Nectanebo I" tags="" position="3575,1675" size="100,100">Nectanebo I was a pharaoh, which means he was like a king but also a bit like a priest. 
 He had a very important job: he needed to talk to the gods and keep his people safe. 
 
-[[Next-&gt;Nectanebo welcoming]]
+Meet Nectanebo I, a real-life superhero from over 2,300 years ago!
+[[Continue-&gt;Nectanebo welcoming]]
 &lt;style&gt;
 
 tw-story {
@@ -263,7 +258,7 @@ background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp2
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="7" name="The guardian demons" tags="" position="700,1275" size="100,100">Look at these creatures! 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="6" name="The guardian demons" tags="" position="3275,1825" size="100,100">Look at these creatures! 
 
 They might seem scary, but they were actually protectors. 
 
@@ -275,7 +270,7 @@ They helped protect the pharaoh and his kingdom from danger.
 By giving them gifts, the pharaoh was asking for their help and protection.
 
 Let&#39;s learn more together
-[[Next-&gt;Lion demon]] 
+[[Continue-&gt;Lion demon]] 
 
 &lt;style&gt;
 
@@ -284,17 +279,18 @@ background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-Digi
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="Magic Hieroglyphs" tags="" position="525,1275" size="100,100">See those tiny symbols around the scene? 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="7" name="Magic Hieroglyphs" tags="" position="3900,2025" size="100,100">See those tiny symbols around the scene? 
 
 Those are hieroglyphs, the ancient Egyptian way of writing. 
 
-They didn’t use letters like we do. Instead, they used pictures! 
+They didn’t use letters like we do. 
+Instead, they used pictures! 
 
-These hieroglyphs tell us that the pharaoh was thanking the guardian demons for helping him win battles and keep his people safe. 
+These hieroglyphs tell us that the pharaoh was thanking the demon-guardians for helping him win battles and keep his people safe. 
 It’s like writing a thank-you card, but way cooler!
 
 Let&#39;s learn more together
-[[Next-&gt;ankh]]
+[[Continue-&gt;ankh]]
 
 &lt;style&gt;
 
@@ -303,13 +299,13 @@ background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-Digi
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="wise advise" tags="" position="525,1625" size="100,100">Why is this carving important? 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="wise advise" tags="" position="2525,2025" size="100,100">Why is this carving important? 
 
 It shows us that even the most powerful people needed help and had to ask nicely for it. The pharaoh, with all his power, still showed respect to the guardians. 
 
 It’s a great reminder that no matter how strong or important we are, it’s always good to be thankful and respectful.
 
-[[Next-&gt;match-intro]] 
+[[Continue-&gt;match-intro]] 
 
 &lt;style&gt;
 
@@ -318,7 +314,7 @@ background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp2
 background-size:cover;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="10" name="match-intro" tags="" position="700,1575" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Now, let&#39;s play a game together!
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="match-intro" tags="" position="2525,1875" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Now, let&#39;s play a game together!
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -326,7 +322,7 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-[[Get started-&gt;game welcoming]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="scarab" tags="" position="350,1225" size="100,100">&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Khepri&quot; or &quot;Rebirth&quot;]&lt;/div&gt;
+[[Get started-&gt;game welcoming]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="scarab" tags="" position="3450,2025" size="100,100">&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Khepri&quot; or &quot;Rebirth&quot;]&lt;/div&gt;
 
 Symbol: 🪲 //(scarab)//
 &lt;img src=&quot;https://cdn.britannica.com/97/132897-050-2593000F/Marriage-scarab-Tiy-Amenhotep-III-faience-New-53-bce.jpg?raw=true&quot; alt=&quot;The symbol of the scarab&quot; height=&quot;200&quot;&gt;
@@ -337,7 +333,7 @@ The Egyptians did and thought it was magic!
 
 This beetle, called &#39;Khepri&#39;, symbolizes rebirth and new beginnings because the beetle seemed to create life from nothing.
 
-[[Next-&gt;Find the scarab]]
+[[Continue-&gt;Find the scarab]]
 
 &lt;style&gt;
 
@@ -347,7 +343,7 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="12" name="ankh" tags="" position="350,1100" size="100,100">(set: $findAnkh to false)
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="11" name="ankh" tags="" position="3675,2025" size="100,100">(set: $findAnkh to false)
 &lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Life&quot;]&lt;/div&gt;
 
 Symbol: ☥ //(ankh)//
@@ -356,11 +352,11 @@ Symbol: ☥ //(ankh)//
 
 This symbol looks like a key with a loop on top. 
 
-It&#39;s called &quot;ankh&quot; and it stands for life. 
+It&#39;s called &quot;Ankh&quot; and it stands for life. 
 
 It was like a good luck charm that people believed could bring them health and happiness.
 
-[[Next-&gt;Find the ankh]]
+[[Continue-&gt;Find the ankh]]
 &lt;style&gt;
 
 tw-story {
@@ -369,34 +365,31 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="13" name="relief" tags="" position="725,1100" size="100,100">In this carving, you can see Nectanebo I kneeling down in three different scenes. 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="12" name="relief" tags="" position="3275,1675" size="100,100">In this carving, you can see Nectanebo I kneeling down in three different scenes. 
 
 He’s giving beautiful jewels and fabrics to some very strange but fascinating creatures. 
 
 But why is he doing this? Let’s find out!
 
-[[Next-&gt;The guardian demons]]
-&lt;audio autoplay loop&gt;
-  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
-&lt;/audio&gt;
+[[Continue-&gt;The guardian demons]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/a7344fd534c1a2abd373a4891e486ab33005f561/img/demons.jpg&quot;);
 background-size:cover;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="14" name="Nectanebo welcoming" tags="speech" position="900,1000" size="100,100">&lt;div id=&quot;animated-message&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Welcome, children, to the grand halls of my temple! 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="13" name="Nectanebo welcoming" tags="speech" position="3425,1675" size="100,100">&lt;div id=&quot;animated-message&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Welcome, children, to the grand halls of my temple! 
 
 I am Nectanebo I, your pharaoh from ages past. 
 
 In my time, our kingdom thrived under the blessings of the gods, and it is my honor to share with you the wonders of our ancient land.&quot;]&lt;/div&gt;
 
-[[Next-&gt;relief]]
+[[Continue-&gt;relief]]
 
 &lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/nectanebo.mp4&quot; type=&quot;video/mp4&quot;/&gt;
 &lt;/div&gt;
 &lt;audio autoplay&gt;
   &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/1.welcome_necta.mp3?raw=true&quot; type=&quot;audio/mp3&quot;&gt;
-&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="15" name="Lion demon" tags="" position="925,1200" size="100,100">This demon-guardian is fierce with the head of a lion! 
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="14" name="Lion demon" tags="" position="3425,1825" size="100,100">This demon-guardian is fierce with the head of a lion! 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/lion-relief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;&lt;/p&gt;
 In ancient Egypt, lions symbolized strength and protection, often associated with the goddess Sekhmet. She was known for her protective powers in war and healing. 
 
@@ -409,7 +402,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Next-&gt;Crocodile open jaw]] </tw-passagedata><tw-passagedata pid="16" name="intermezzo demoni" tags="" position="700,1425" size="100,100">The demon-guardians depicted in these carvings were not just symbols of protection!
+[[Continue-&gt;Crocodile open jaw]] </tw-passagedata><tw-passagedata pid="15" name="intermezzo demoni" tags="" position="4050,1825" size="100,100">The demon-guardians depicted in these carvings were not just symbols of protection!
 
 They represented a deeper relationship between the pharaoh and the divine forces that safeguarded the kingdom. 
 
@@ -423,7 +416,7 @@ background-size:cover;
 &lt;/style&gt;
 
 Now, let&#39;s learn more about the magical symbols surrounding these figures
-[[Next-&gt;Magic Hieroglyphs]]</tw-passagedata><tw-passagedata pid="17" name="Crocodile open jaw" tags="" position="1125,1225" size="100,100">This demon-guardian has the head of a crocodile with its jaw open! 
+[[Continue-&gt;Magic Hieroglyphs]]</tw-passagedata><tw-passagedata pid="16" name="Crocodile open jaw" tags="" position="3575,1825" size="100,100">This demon-guardian has the head of a crocodile with its jaw open! 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/croco-open-grelief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;&lt;/p&gt;
 In ancient Egyptian mythology, the open-jaw crocodile represented the fierce and protective aspect of Sobek, the Nile god. 
 
@@ -436,7 +429,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Next-&gt;Crocodile close jaw]] </tw-passagedata><tw-passagedata pid="18" name="Crocodile close jaw" tags="" position="1025,1375" size="100,100">This demon-guardian has the head of a crocodile with its jaw closed! 
+[[Continue-&gt;Crocodile close jaw]] </tw-passagedata><tw-passagedata pid="17" name="Crocodile close jaw" tags="" position="3725,1825" size="100,100">This demon-guardian has the head of a crocodile with its jaw closed! 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/croco-close-grelief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;&lt;/p&gt;
 Crocodiles were revered in ancient Egypt also as symbols of fertility and the protective power of the Nile, associated with Sobek as we said previously. 
 
@@ -449,7 +442,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Next-&gt;Snake]] </tw-passagedata><tw-passagedata pid="19" name="Snake" tags="" position="875,1400" size="100,100">This demon-guardian has three heads, each with a serpent! 
+[[Continue-&gt;Snake]] </tw-passagedata><tw-passagedata pid="18" name="Snake" tags="" position="3900,1825" size="100,100">This demon-guardian has three heads, each with a serpent! 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/snake-grelief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;&lt;/p&gt;
 Snakes were symbols of protection and regeneration in ancient Egypt, often associated with various deities like the goddess Wadjet. 
 
@@ -462,7 +455,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Next-&gt;intermezzo demoni]] </tw-passagedata><tw-passagedata pid="20" name="INTRODUCTION - STORY STARTS" tags="" position="50,425" size="100,100">Once upon a time, in the golden sands of ancient Egypt, lived a brave and curious young boy named Amun. 
+[[Continue-&gt;intermezzo demoni]] </tw-passagedata><tw-passagedata pid="19" name="INTRODUCTION - STORY STARTS" tags="" position="875,350" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;Once upon a time, in the golden sands of ancient Egypt, lived a brave and curious young boy named Amun. 
 
 His eyes sparkled like the stars, and his heart beat with the rhythm of adventure.
 
@@ -473,10 +466,6 @@ One sunny afternoon, he was playing with his favorite red ball, but unfortunatel
 Amun searched and searched, until he found himself at the mouth of a secret, hidden entrance to a forgotten tomb.
 
 Will Amun dare to enter the mysterious tomb?
-[[Next-&gt;Tomb entrance]]
-&lt;audio autoplay loop&gt;
-  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
-&lt;/audio&gt;
 &lt;style&gt;
 
 tw-story {
@@ -485,28 +474,25 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="21" name="First display (INTRO)" tags="room" position="275,450" size="100,100">//You are activating the first display.//
-
-You are going to be introduced to the story of Amun.
-
-Please, look at the indications on the displays along the exhibition to follow the correct path.
-
-Go to the [[Story-&gt;INTRODUCTION - STORY STARTS]]</tw-passagedata><tw-passagedata pid="22" name="Fifth display" tags="room" position="1025,750" size="100,100">//You are activating the fifth display.//
+&lt;/style&gt;
+[[Continue-&gt;Tomb entrance]]&lt;/div&gt;
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="20" name="Fifth display" tags="room" position="3925,1675" size="100,100">//You are activating the fifth display.//
 
 You&#39;ll learn about the &#39;&#39;Relief of Nectanebo I (30th Dynasty, 380-362 BC, Ptolemaic Period/Late Period)&#39;&#39;.
 
-Go to the [[Story-&gt;Introduction to the Artifact]]</tw-passagedata><tw-passagedata pid="23" name="Tomb entrance" tags="" position="275,275" size="100,100">With a deep breath and a spark of excitement, Amun stepped into the cool darkness of the hidden tomb. The air inside felt ancient and magical, as if whispering secrets from a time long ago.
+Go to the [[Story-&gt;Introduction to the Artifact]]</tw-passagedata><tw-passagedata pid="21" name="Tomb entrance" tags="" position="1025,350" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;With a deep breath and a spark of excitement, Amun stepped into the cool darkness of the hidden tomb. The air inside felt ancient and magical, as if whispering secrets from a time long ago.
 
 The walls glowed with the flicker of enchanted hieroglyphics, telling stories of gods, treasures, and incredible adventures. Amun&#39;s heart pounded with curiosity and a hint of fear, but his bravery pushed him forward.
 
 Where will Amun’s journey take him next?
-
-[[Next-&gt;Mysterious discovery]]
+&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/video.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+&lt;/div&gt;
+[[Continue-&gt;Mysterious discovery]]&lt;/div&gt;
 &lt;audio autoplay loop&gt;
   &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(1).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
-&lt;/audio&gt;
-&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/video.mp4&quot; type=&quot;video/mp4&quot;/&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Mysterious discovery" tags="" position="50,250" size="100,100">Deeper into the tomb, Amun found himself in a wondrous corridor filled with glowing symbols and ancient carvings. Each step echoed with the whispers of long-lost pharaohs and the rustle of unseen wings.
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="22" name="Mysterious discovery" tags="" position="1200,350" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;Deeper into the tomb, Amun found himself in a wondrous corridor filled with glowing symbols and ancient carvings. Each step echoed with the whispers of long-lost pharaohs and the rustle of unseen wings.
 
 Suddenly, the ground shimmered beneath his feet, and with a magical flash, Amun was whisked away into a mystical world where time stood still and everything felt dream-like. 
 
@@ -516,13 +502,13 @@ What marvels and mysteries await Amun in this enchanted place?
 &lt;style&gt;
 
 tw-story {
-background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/introBG.jpeg?raw=true&quot;);
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/assets/img/amun-inside.jpeg?raw=true&quot;);
 background-size:cover;
 background-position: center;
 }
 
 &lt;/style&gt;
-[[Next-&gt;Enchanted World]]</tw-passagedata><tw-passagedata pid="25" name="Enchanted World" tags="" position="275,125" size="100,100">Amun marveled at the breathtaking sights around him. 
+[[Continue-&gt;Enchanted World]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Enchanted World" tags="" position="1400,350" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;Amun marveled at the breathtaking sights around him. 
 He saw rivers of gold that flowed gently like liquid sunshine, and trees that sparkled with jewels instead of leaves. Tiny, magical sparkles fluttered around, lighting up the air with a soft, golden glow.
 
 But Amun remembered his mission: to find his lost ball. 
@@ -531,8 +517,6 @@ So he ventured forward.
 The ancient hieroglyphics on the walls seemed to come to life, guiding him with hints and clues.
 
 Where will the next clue lead Amun?
-
-[[Next-&gt;Second display]]
 &lt;style&gt;
 
 tw-story {
@@ -541,9 +525,8 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="26" name="FAKE-DOOR" tags="" position="575,125" size="100,100">FAKE DOOR Twine
-
-[[Next-&gt;Third display]]</tw-passagedata><tw-passagedata pid="27" name="New Adventure" tags="" position="1650,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;With his newfound courage and enchanted ball, Amun returned to the sunny sands of Egypt, ready for his next adventure. 
+&lt;/style&gt;
+[[Continue-&gt;Second display]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="New Adventure" tags="" position="925,1925" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 25px&quot;&gt;With his newfound courage and enchanted ball, Amun returned to the egyptian sands of his time, ready for his next adventure. 
 
 His heart was full of excitement, knowing that there were countless mysteries and treasures waiting to be discovered.
 
@@ -557,7 +540,7 @@ background-position: center;
 }
 
 &lt;/style&gt;
-The end… for now.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Treasure Room" tags="" position="1500,1725" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center&quot;&gt;As Amun solved the final puzzle, the walls of the chamber parted to reveal a dazzling treasure room. 
+The end… for now.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Treasure Room" tags="" position="1100,1925" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center&quot;&gt;As Amun solved the final puzzle, the walls of the chamber parted to reveal a dazzling treasure room. 
 
 Golden treasures sparkled like a thousand suns, and ancient artifacts glowed with a mysterious light.
 
@@ -569,7 +552,7 @@ Amun picked it up, feeling the warmth of adventure and the joy of discovery.
 
 He was ready to return home finally, his heart full of tales of ancient wonders and magical adventures.
 
-Where will Amun’s adventures take him next?&lt;/div&gt;
+Where will Amun’s adventures take him next?
 &lt;style&gt;
 
 tw-story {
@@ -579,9 +562,9 @@ background-position: center;
 }
 
 &lt;/style&gt;
-[[Next-&gt;New Adventure]]</tw-passagedata><tw-passagedata pid="29" name="Find the ankh" tags="" position="25,1100" size="100,100">Can you find the Ankh on the relief?
+[[Continue-&gt;New Adventure]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Find the ankh" tags="" position="3725,2200" size="100,100">Can you find the Ankh on the relief?
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
-[[Next-&gt;ankh found]]
+[[Continue-&gt;ankh found]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -589,9 +572,9 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findAnkh to false)</tw-passagedata><tw-passagedata pid="30" name="Find the scarab" tags="" position="25,1300" size="100,100">Can you find the scarab on the relief?
+(set: $findAnkh to false)</tw-passagedata><tw-passagedata pid="27" name="Find the scarab" tags="" position="3375,2200" size="100,100">Can you find the scarab on the relief?
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
-[[Next-&gt;scarab found]]
+[[Continue-&gt;scarab found]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -599,7 +582,7 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findScarb to false)</tw-passagedata><tw-passagedata pid="31" name="hawk" tags="" position="350,1350" size="100,100">(set: $findHawk to false)
+(set: $findScarb to false)</tw-passagedata><tw-passagedata pid="28" name="hawk" tags="" position="3175,2025" size="100,100">(set: $findHawk to false)
 &lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Horus&quot; or &quot;The Sky God&quot;]&lt;/div&gt;
 
 Symbol: 🦅 //(hawk)//
@@ -613,7 +596,7 @@ The Egyptians thought he watched over their pharaohs, guiding and protecting the
 
 Every pharaoh was seen as a living Horus, so the hawk also became a symbol of kingship and royal power!
 
-[[Next-&gt;Find the hawk]]
+[[Continue-&gt;Find the hawk]]
 &lt;style&gt;
 
 tw-story {
@@ -622,7 +605,7 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="32" name="goose" tags="" position="350,1475" size="100,100">(set: $findGoose to false)
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="29" name="goose" tags="" position="2850,2025" size="100,100">(set: $findGoose to false)
 &lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;(font:&#39;Papyrus&#39;)[&quot;Goose with the Sun&quot;]&lt;/div&gt;
 
 Symbol: ☀️🦆
@@ -636,7 +619,7 @@ Imagine the sun shining down and the duck waddling happily. It’s like the sun 
 The Egyptians used this symbol to write &quot;son&quot; and to make many other words. 
 It’s like the duck and the sun are helping them talk about family and the important people in their lives!
 
-[[Next-&gt;Find the goose]]
+[[Continue-&gt;Find the goose]]
 &lt;style&gt;
 
 tw-story {
@@ -645,10 +628,10 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="Find the hawk" tags="" position="25,1500" size="100,100">Can you find the hawk on the relief? 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="30" name="Find the hawk" tags="" position="3075,2200" size="100,100">Can you find the hawk on the relief? 
 //Hint:// In the depiction, it is wearing the Pschent, the double crown representing the unification of Upper and Lower Egypt. 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
-[[Next-&gt;hawk found]]
+[[Continue-&gt;hawk found]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -656,9 +639,9 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findHawk to false)</tw-passagedata><tw-passagedata pid="34" name="Find the goose" tags="" position="25,1650" size="100,100">Can you find the goose with the sun on the relief? 
+(set: $findHawk to false)</tw-passagedata><tw-passagedata pid="31" name="Find the goose" tags="" position="2775,2200" size="100,100">Can you find the goose with the sun on the relief? 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief2.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;600&quot;&gt;&lt;/p&gt;
-[[Next-&gt;goose found]]
+[[Continue-&gt;goose found]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -666,7 +649,7 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findGoose to false)</tw-passagedata><tw-passagedata pid="35" name="Lion" tags="" position="1125,1950" size="100,100">&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+(set: $findGoose to false)</tw-passagedata><tw-passagedata pid="32" name="Lion" tags="" position="1900,2150" size="100,100">&lt;div style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
 
 You remembered it perfectly
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/lion-relief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;
@@ -681,7 +664,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Back-&gt;all guardians identified]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Open-Jawed Crocodile" tags="" position="1000,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+[[Back-&gt;all guardians identified]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Open-Jawed Crocodile" tags="" position="1900,2000" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
 
 You remembered it perfectly
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/croco-open-grelief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;
@@ -696,7 +679,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Closed-Jawed Crocodile" tags="" position="750,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Closed-Jawed Crocodile" tags="" position="1900,1700" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
 
 You remembered it perfectly
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/croco-close-grelief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;
@@ -711,7 +694,7 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Three-Headed Snake" tags="" position="875,1950" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
+[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Three-Headed Snake" tags="" position="1900,1850" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉 
 
 You remembered it perfectly
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/snake-grelief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;
@@ -726,26 +709,22 @@ background-size:cover;
 }
 
 &lt;/style&gt;
-[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="COFFIN" tags="" position="575,300" size="100,100">Coffin Twine
-
-[[Next-&gt;Fourth display]]</tw-passagedata><tw-passagedata pid="40" name="PAPYRUS" tags="" position="575,450" size="100,100">PAPYRUS TWINE
-
-[[Next-&gt;Fifth display]]</tw-passagedata><tw-passagedata pid="41" name="Third display" tags="room" position="750,125" size="100,100">//You are activating the second display.//
+[[Back-&gt;Matching guardians puzzle]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Third display" tags="room" position="1725,600" size="100,100">//You are activating the second display.//
 
 You&#39;ll learn about the &#39;&#39;Coffin of Irinimenpu (12th-13th Dynasty, Middle Kingdom)&#39;&#39;.
 
-Go to the [[Story-&gt;COFFIN]]</tw-passagedata><tw-passagedata pid="42" name="Second display" tags="room" position="425,125" size="100,100">//You are activating the second display.//
+Go to the [[Story-&gt;sarcophagus start]]</tw-passagedata><tw-passagedata pid="37" name="Second display" tags="room" position="1400,500" size="100,100">//You are activating the second display.//
 
 You&#39;ll learn about the &#39;&#39;False Door in the Name of Sameri Stele (Late 5th Dynasty, Old Kingdom)&#39;&#39;.
 
-Go to the [[Story-&gt;FAKE-DOOR]]</tw-passagedata><tw-passagedata pid="43" name="Fourth display" tags="room" position="750,325" size="100,100">//You are activating the fourth display.//
+Go to the [[Story-&gt;false door start]]</tw-passagedata><tw-passagedata pid="38" name="Fourth display" tags="room" position="2875,600" size="100,100">//You are activating the fourth display.//
 
 You&#39;ll learn about the &#39;&#39;Funerary Papyrus in the Name of Djedkhonsuiufankh (Third Intermediate Period: 22nd-23rd Dynasty, 944-716 B.C.)&#39;&#39;.
 
-Go to the [[Story-&gt;PAPYRUS]]</tw-passagedata><tw-passagedata pid="44" name="scarab found" tags="" position="200,1300" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
+Go to the [[Story-&gt;papyrus start]]</tw-passagedata><tw-passagedata pid="39" name="scarab found" tags="" position="3225,2200" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
 You found the scarab on the relief.
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/scarb-relief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;&lt;/div&gt;
-[[Next-&gt;hawk]]
+[[Continue-&gt;hawk]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -753,10 +732,10 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findScarb to true)</tw-passagedata><tw-passagedata pid="45" name="hawk found" tags="" position="200,1450" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
+(set: $findScarb to true)</tw-passagedata><tw-passagedata pid="40" name="hawk found" tags="" position="2925,2200" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
 You found the crowned hawk on the relief.
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/hawk-relief.jpg?raw=true&quot; alt=&quot;hawk&quot; height=&quot;300&quot;&gt;&lt;/div&gt;
-[[Next-&gt;goose]]
+[[Continue-&gt;goose]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -764,10 +743,10 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findHawk to true)</tw-passagedata><tw-passagedata pid="46" name="goose found" tags="" position="275,1650" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
+(set: $findHawk to true)</tw-passagedata><tw-passagedata pid="41" name="goose found" tags="" position="2625,2200" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
 You found the goose with the sun on the relief.
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/goose-relief.jpg?raw=true&quot; alt=&quot;hawk&quot; height=&quot;300&quot;&gt;&lt;/div&gt;
-[[Next-&gt;wise advise]]
+[[Continue-&gt;wise advise]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -775,10 +754,10 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findGoose to true)</tw-passagedata><tw-passagedata pid="47" name="ankh found" tags="" position="200,1175" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
+(set: $findGoose to true)</tw-passagedata><tw-passagedata pid="42" name="ankh found" tags="" position="3550,2200" size="100,100">&lt;div id=&quot;animated-message&quot; style=&quot;text-align: center; font-size: 30px&quot;&gt;Great job! 🎉
 You found the Ankh on the relief.
 &lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/relief-fragments/ankh-relief.jpg?raw=true&quot; alt=&quot;Relief of Nectanebo I&quot; height=&quot;300&quot;&gt;&lt;/div&gt;
-[[Next-&gt;hawk]]
+[[Continue-&gt;scarab]]
 &lt;style&gt;
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/20240614_120626.jpg?raw=true&quot;);
@@ -786,14 +765,7 @@ background-size:cover;
 background-position: center;
 }
 &lt;/style&gt;
-(set: $findAnkh to true)</tw-passagedata><tw-passagedata pid="48" name="all guardians identified" tags="" position="1125,1675" size="100,100">//Identify the demon-guardians based on their animal head and the corresponding description.//
-
-Guardians:
-1. Lion Demon-Guardian: protects Pharaoh in battles and healing.
-2. Three-Headed Snake Demon-Guardian: the guardian symbolizing vigilance.
-3. Open-Jawed Crocodile Demon-Guardian: symbolizes the protective power of Sobek.
-4. Closed-Jawed Crocodile Demon-Guardian: Represents fertility and the protective power of the Nile.
-&lt;style&gt;
+(set: $findAnkh to true)</tw-passagedata><tw-passagedata pid="43" name="all guardians identified" tags="" position="1600,1925" size="100,100">&lt;style&gt;
 
 tw-story {
 background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/background1.jpg?raw=true&quot;);
@@ -801,14 +773,1713 @@ background-size:cover;
 background-position: center;
 }
 
-&lt;/style&gt;
-&lt;div style=&quot;text-align: center; font-size: 27px&quot;&gt;WELL DONE! 🎉
+&lt;/style&gt;&lt;div style=&quot;text-align: center; font-size: 27px&quot;&gt;WELL DONE! 🎉
 
 You found the solution! You have identified all the guardians. 
 
-Continue to next step to reveal the Pharaoh&#39;s message.
+Continue to the next step to reveal the Pharaoh&#39;s message.
 
-[[Next-&gt;Hidden Message]] &lt;/div&gt;</tw-passagedata></tw-storydata>
+[[Continue-&gt;Hidden Message]] &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="false door" tags="" position="1225,675" size="100,100">
+  [**Amun:** Sameri, what is a false door stele?
+  
+  **Sameri:** It is a very important funerary architecture from my era, Old Kingdom. It is made up of an architrave, lateral uprights and a central part depicting a rolled mat, which must depict a door accessible to the deceased.
+  
+  **Amun:** Wow, that sounds so cool! But what is the purpose of this stele?
+  
+  **Sameri:** It is for the soul of the deceased to be able to enter and exit the tomb, just like I did.]
+  
+  [[inspect the hierogliphics|false door-cont]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/20240626_104008.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="offering" tags="" position="875,675" size="100,100">(set: $a to false) (set: $b to false) (set: $d to false) (set: $e to false) (set: $r to false)
+  
+[**Sameri:** The funerary offerings could be different things, but the most important offering that is being described in my stele of the false door, are one type of food and one type of beverage. You must guess which two funerary offerings are written on my stele.]
+  
+(live:3s)[(t8n:&quot;dissolve&quot;)[**Amun:** //Can you help me guess the letters of the offerings?//](stop:)]
+  
+(live: 5s)[(t8n:&quot;dissolve&quot;)[**Amun:** //Great! Let&#39;s start guessing!//
+
+[[start the game |letter guessing game]]](stop:)]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="46" name="a" tags="" position="850,1050" size="100,100">(set: $a to true)
+(if:$a is true and $b is true and $d is true and $e is true and $r is true)[
+The characters on the stele started to glow.
+
+**Amun:** What&#39;s happening, Sameri?
+
+**Sameri:** You have completed the puzzle, Amun. Let us see the final answer.
+
+(box:&quot;=X=&quot;)[(live: 3s)[(t8n:&quot;dissolve&quot;)[beer &amp; bread](stop:)]]
+(live: 5s)[(t8n:&quot;dissolve&quot;)[
+[[talk with Sameri|stele-more]]](stop:)]](else:)[
+The characters on the stele briefly glowed.
+
+**Sameri:** Good job, Amun! You guessed a correct letter!
+
+**Amun:** Let&#39;s see the where this letter goes!
+
+[[return to the game|letter guessing game]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="47" name="b" tags="" position="1025,1050" size="100,100">(set: $b to true)
+(if:$a is true and $b is true and $d is true and $e is true and $r is true)[
+The characters on the stele started to glow.
+
+**Amun:** What&#39;s happening, Sameri?
+
+**Sameri:** You have completed the puzzle, Amun. Let us see the final answer.
+
+(box:&quot;=X=&quot;)[(live: 3s)[(t8n:&quot;dissolve&quot;)[beer &amp; bread](stop:)]]
+(live: 5s)[(t8n:&quot;dissolve&quot;)[
+[[talk with Sameri|stele-more]]](stop:)]](else:)[
+The characters on the stele briefly glowed.
+
+**Sameri:** Good job, Amun! You guessed a correct letter!
+
+**Amun:** Let&#39;s see the where this letter goes!
+
+[[return to the game|letter guessing game]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="48" name="d" tags="" position="1300,1050" size="100,100">(set: $d to true)
+(if:$a is true and $b is true and $d is true and $e is true and $r is true)[
+The characters on the stele started to glow.
+
+**Amun:** What&#39;s happening, Sameri?
+
+**Sameri:** You have completed the puzzle, Amun. Let us see the final answer.
+
+(box:&quot;=X=&quot;)[(live: 3s)[(t8n:&quot;dissolve&quot;)[beer &amp; bread](stop:)]]
+(live: 5s)[(t8n:&quot;dissolve&quot;)[
+[[talk with Sameri|stele-more]]](stop:)]](else:)[
+The characters on the stele briefly glowed.
+
+**Sameri:** Good job, Amun! You guessed a correct letter!
+
+**Amun:** Let&#39;s see the where this letter goes!
+
+[[return to the game|letter guessing game]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="49" name="e" tags="" position="1175,1050" size="100,100">(set: $e to true)
+(if:$a is true and $b is true and $d is true and $e is true and $r is true)[
+The characters on the stele started to glow.
+
+**Amun:** What&#39;s happening, Sameri?
+
+**Sameri:** You have completed the puzzle, Amun. Let us see the final answer.
+
+(box:&quot;=X=&quot;)[(live: 3s)[(t8n:&quot;dissolve&quot;)[beer &amp; bread](stop:)]]
+(live: 5s)[(t8n:&quot;dissolve&quot;)[
+[[talk with Sameri|stele-more]]](stop:)]](else:)[
+The characters on the stele briefly glowed.
+
+**Sameri:** Good job, Amun! You guessed a correct letter!
+
+**Amun:** Let&#39;s see the where this letter goes!
+
+[[return to the game|letter guessing game]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="50" name="r" tags="" position="1450,1050" size="100,100">(set: $r to true)
+(if:$a is true and $b is true and $d is true and $e is true and $r is true)[
+The characters on the stele started to glow.
+
+**Amun:** What&#39;s happening, Sameri?
+
+**Sameri:** You have completed the puzzle, Amun. Let us see the final answer.
+
+(box:&quot;=X=&quot;)[(live: 3s)[(t8n:&quot;dissolve&quot;)[beer &amp; bread](stop:)]]
+(live: 5s)[(t8n:&quot;dissolve&quot;)[
+[[talk with Sameri|stele-more]]](stop:)]](else:)[
+The characters on the stele briefly glowed.
+
+**Sameri:** Good job, Amun! You guessed a correct letter!
+
+**Amun:** Let&#39;s see the where this letter goes!
+
+[[return to the game|letter guessing game]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="51" name="letter guessing game" tags="" position="1125,850" size="100,100">(if:$a is true and $b is false and $d is false and $e is false and $r is false)
+  [(box:&quot;=X=&quot;)[_ _ _ _ &amp; _ _ _ a _]](else-if:$a is false and $b is true and $d is false and $e is false and $r is false)[(box:&quot;=X=&quot;)[b _ _ _ &amp; b _ _ _ _]](else-if:$a is false and $b is false and $d is true and $e is false and $r is false)[(box:&quot;=X=&quot;)[_ _ _ _ &amp; _ _ _ _ d]](else-if:$a is false and $b is false and $d is false and $e is true and $r is false)[(box:&quot;=X=&quot;)[_ e e _ &amp; _ _ e _ _]](else-if:$a is false and $b is false and $d is false and $e is false and $r is true)[(box:&quot;=X=&quot;)[_ _ _ r &amp; _ r _ _ _]](else-if:$a is true and $b is true and $d is false and $e is false and $r is false)[(box:&quot;=X=&quot;)[b _ _ _ &amp; b _ _ a _]](else-if:$a is true and $b is false and $d is true and $e is false and $r is false)[(box:&quot;=X=&quot;)[_ _ _ _ &amp; _ _ _ a d]](else-if:$a is true and $b is false and $d is false and $e is true and $r is false)[(box:&quot;=X=&quot;)[_ e e _ &amp; _ _ e a _]](else-if:$a is true and $b is false and $d is false and $e is false and $r is true)[(box:&quot;=X=&quot;)[_ _ _ r &amp; _ r _ a _]](else-if:$a is false and $b is true and $d is true and $e is false and $r is false)[(box:&quot;=X=&quot;)[b _ _ _ &amp;  b_ _ _ d]](else-if:$a is false and $b is true and $d is false and $e is true and $r is false)[(box:&quot;=X=&quot;)[b e e _ &amp; b _ e _ _]](else-if:$a is false and $b is true and $d is false and $e is false and $r is true)[(box:&quot;=X=&quot;)[b _ _ r &amp; b r _ _ _]](else-if:$a is false and $b is false and $d is true and $e is true and $r is false)[(box:&quot;=X=&quot;)[_ e e _ &amp; _ _ e _ d]](else-if:$a is false and $b is false and $d is true and $e is false and $r is true)[(box:&quot;=X=&quot;)[_ _ _ r &amp; _ r _ _ d]](else-if:$a is false and $b is false and $d is false and $e is true and $r is true)[(box:&quot;=X=&quot;)[_ e e r &amp; _ r e _ _]](else-if:$a is true and $b is true and $d is true and $e is false and $r is false)[(box:&quot;=X=&quot;)[b _ _ _ &amp; b _ _ a d]
+  ](else-if:$a is true and $b is true and $d is false and $e is true and $r is false)[(box:&quot;=X=&quot;)[b e e _ &amp; b _ e a _]](else-if:$a is true and $b is true and $d is false and $e is false and $r is true)[(box:&quot;=X=&quot;)[b _ _ r &amp; b r _ a _]](else-if:$a is true and $b is false and $d is true and $e is true and $r is false)[(box:&quot;=X=&quot;)[_ e e _ &amp; _ _ e a d]](else-if:$a is true and $b is false and $d is true and $e is false and $r is true)[(box:&quot;=X=&quot;)[_ _ _ r &amp; _ r _ a d]](else-if:$a is true and $b is false and $d is false and $e is true and $r is true)[(box:&quot;=X=&quot;)[_ e e r &amp; _ r e a _]](else-if:$a is false and $b is true and $d is true and $e is true and $r is false)[(box:&quot;=X=&quot;)[b e e _ &amp; b _ e _ d]](else-if:$a is false and $b is true and $d is true and $e is false and $r is true)[(box:&quot;=X=&quot;)[b _ _ r &amp; b r _ _ d]](else-if:$a is false and $b is true and $d is false and $e is true and $r is true)[(box:&quot;=X=&quot;)[b e e r &amp; b r e _ _]](else-if:$a is false and $b is false and $d is true and $e is true and $r is true)[(box:&quot;=X=&quot;)[_ e e r &amp; _ r e _ d]](else-if:$a is true and $b is true and $d is true and $e is true and $r is false)[(box:&quot;=X=&quot;)[b e e _ &amp; b _ e a d]](else-if:$a is true and $b is true and $d is true and $e is false and $r is true)[(box:&quot;=X=&quot;)[b _ _ r &amp; b r _ a d]](else-if:$a is true and $b is true and $d is false and $e is true and $r is true)[(box:&quot;=X=&quot;)[b e e r &amp; b r e a _]](else-if:$a is true and $b is false and $d is true and $e is true and $r is true)[(box:&quot;=X=&quot;)[_ e e r &amp; _ r e a d]](else-if:$a is false and $b is true and $d is true and $e is true and $r is true)[(box:&quot;=X=&quot;)[b e e r &amp; b r e _ d]](else-if:$a is false and $b is false and $d is false and $e is false and $r is false)[(box:&quot;=X=&quot;)[_ _ _ _ &amp; _ _ _ _ _]](align: &quot;=&gt;&lt;======&quot;)[
+  [[a]][[b]][[c|false]][[d]][[e]][[f|false]][[g|false]][[h|false]][[i|false]][[j|false]][[k|false]][[l|false]][[m|false]][[n|false]][[o|false]][[p|false]][[q|false]][[r]][[s|false]][[t|false]][[u|false]][[v|false]][[w|false]][[x|false]][[y|false]][[z|false]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="52" name="Sameri-family" tags="" position="775,1475" size="100,100">
+  **Amun:** Sameri, is that you in that dinner scene?
+  
+  **Sameri:** Yes, Amun, it is me. I was an inspector and an assistant to the pharaoh when I was alive. This stele was dedicated to me, so I am depicted on the center scene. Additionally, on the lower stele, I am also depicted on the left outer panel, on the left inner panel and the bottom center section.
+  
+  **Amun:** But there are other people as well. Who are they?
+  
+  **Sameri:** They are members of my family. How about you try to guess who they are?
+  
+  (live:3s)[(t8n:&quot;dissolve&quot;)[**Amun:** //Can you help me guess the family members of Sameri?//](stop:)]
+  
+  (live: 5s)[(t8n:&quot;dissolve&quot;)[**Amun:** //Great! Let&#39;s start guessing!//
+  (set: $guesses to (a:))
+  [[start the game|input-guess]]](stop:)]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/20240626_104008.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="53" name="stele-more" tags="" position="1150,1325" size="100,100">
+  **Sameri:** Good job Amun! You found the answer. Beer and different types of bread are mentioned many times in my stele and they are very important funerary offerings.
+  
+  Sameri pointed to the upper part of the stele.
+  
+  **Sameri:** Did you notice the scene with a table full of food and drinks? That scene depicts what must be offered to Anubis.
+  
+  Amun kept looking on the upper part of the stele.
+  
+  [[Amun noticed a scene on the stele |Sameri-family]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/20240626_104008.jpg?raw=true&quot;);
+  background-size:cover;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="54" name="family guessing game" tags="" position="1125,1475" size="100,100">(if: $member is in $family and $guesses&#39;s length &lt; 4 )[(set: $guesses to it+(a:$member))Sameri noded.
+  
+  **Sameri:** Yes, Amun. My $member is depicted on the stele.
+  
+  **Amun:** Let&#39;s guess the other family members!
+  
+  [[keep guessing|input-guess]]](else-if: $member is not in $family)[
+  **Sameri:** No, Amun. My $member is not depicted on the stele. Continue trying.
+  
+  [[try again|input-guess]]](else-if: $member is in $family and $guesses&#39;s length &lt;5)
+  [(set: $guesses to it + (a:$member))
+  
+  Sameri noded.
+  
+  **Sameri:** Yes, Amun. My $member is depicted on the stele.
+  
+  (live:3s)[(t8n:&quot;dissolve&quot;)[**Sameri:** Good job, Amun! Those are all the members of my family.
+  
+  [[learn more about Sameri&#39;s family|family-more]]](stop:)]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/Ancient-Egypt-Egyptian-Art-Painings-HD-Pictures.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="55" name="false door-cont" tags="" position="1050,675" size="100,100">
+  [Amun noticed the hierogliphics on the stele.
+  
+  **Amun:** What is written on your stele, Sameri?
+  
+  **Sameri:** A very good question, Amun. The hierogliphics contain instructions about the funerary offerings that must be presented so that Anubis, the God of the Dead is satisfied, and lets us continue our journey into the afterlife. For Anubis to be pleased with you, you must figure out what funerary offering is written on the stele.]
+  
+  [[figure out the funerary offering for Anubis|offering]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/1616975551752.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="56" name="input-guess" tags="" position="950,1475" size="100,100">(set: $family to (a: &quot;father&quot;,&quot;mother&quot;, &quot;wife&quot;, &quot;brother&quot;, &quot;sister&quot;))
+  (input: bind $member,&quot;=X=&quot;)
+  (if: $guesses&#39;s length &gt;0)[Correct guesses:(for: each _member, ...$guesses)
+  [
+  _member]
+  ](box:&quot;==&gt;&lt;=&quot;)[
+  [[take a guess |family guessing game]]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/Ancient-Egypt-Egyptian-Art-Painings-HD-Pictures.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="57" name="family-more" tags="" position="1300,1475" size="100,100">
+  [**Amun:** Can you tell me more about your family, Sameri?
+  
+  **Sameri:** Of course. My father, Urkaptah, was a shopkeeper. He was the one who commissioned this stele for me, he is depicted on the outer right panel. My mother, Henutes, was an acquaintance of the pharaoh and a priestess of Neit. She was well loved and well respected. She is the one across me on the center dining scene, you can also see her on the inner right panel. The remaining women in the inner left panel and the inner right panel are my sisters, and the other men are my brothers. 
+  
+  **Amun:** Who is the woman next to you on the outer left panel?
+  
+  **Sameri:** That is my dear wife, Khenut. We loved each other very much, so when my father commissioned this stele, he wanted us to be depicted like this, so that we were as affectionate in death, as we were in life.]
+  
+  [[next]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/20240626_104008.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="58" name="next" tags="" position="1475,1475" size="100,100">Suddenly, a glowing path that started from the false door of the stele appeared on the floor, leading deeper into the tomb.
+  
+  **Sameri:** It seems like the God of the Dead is pleased with your efforts to learn about the funerary practices of our civilization. This is all the help I can provide you, Amun. You must follow this path and continue your journey. But you must also be careful, there will be dangers on your way through.
+  
+  Amun thanked Sameri and started to follow the glowing path. At the end of the path, he noticed a sarcophagus. He walked closer to the sarcophagus and started to inspect it.
+  
+  [[finish the section|Third display]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/Dt4VZU3WwAAhWIV.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="59" name="false" tags="" position="1425,875" size="100,100">
+  Nothing happened.
+  
+  **Amun:** Hmm... That doesn&#39;t seem to be correct. Let&#39;s try something else.
+  
+  [[return to the game|letter guessing game]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/xancient-egyptian-offering-table-trips-in-egypt.jpg.pagespeed.ic.pdfn3UJiQ1.jfif?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="60" name="false door start" tags="" position="1400,675" size="100,100">[Amun approached the tall stone structure. The structure had an upper horizontal section and a bottom rectangular column that looked like a door. 
+  
+  As he got closer to the monument, a shimmering appeared and came through the door, materializing and taking the shape of a man.
+  
+  Amun took a step back, but the man smiled warmly and introduced himself.
+  
+  **Sameri:** Greetings, Amun. My name is Sameri, and I am the owner of this stele of the false door. The God of the Dead wishes you to learn about the funerary practices throughout Egypt, and my stele is your first objective. Come closer, and I shall help you.
+  
+  Amun noded and approached the false door stele.]
+  
+  [[ask Sameri about the stele of the false door|false door]]
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/Tumba_de_Rams%C3%A9s_V_y_de_Rams%C3%A9s_VI%2C_Valle_de_las_Reyes%2C_Luxor%2C_Egipto%2C_2022-04-03%2C_DD_69.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="61" name="Question solved1" tags="" position="4125,850" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
+Successfully piecing together the fragments reveals the word
+ (link: &quot;hidden word:&quot;)+(text-colour:#c85656)[
+  LIGHT  
+  [[Let&#39;s go on!-&gt;intro2]]
+  ]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/congratulazioni.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="62" name="intro2" tags="" position="3025,975" size="100,100">(live: 0.1s)[(t8n:&quot;dissolve&quot;)[Adventurer, we have reached our second challenge.](stop:)]
+  
+  (live: 1.5s)[(t8n:&quot;dissolve&quot;)[To unlock the knowledge we need, we need to answer questions about the funerary papyrus of Djedkhonsuiufankh](stop:)]
+  
+  (live: 3s)[(t8n:&quot;dissolve&quot;)[It&#39;s a very special and ancient document. The papyrus is divided into two parts.](stop:)]
+  
+  (live: 5s)[(t8n:&quot;dissolve&quot;)[One part shows an image of Djedkhonsuiufankh, the man who spoke to you before.](stop:)]
+  
+  (live: 7s)[(t8n:&quot;dissolve&quot;)[The other part contains magic spells from the Book of the Dead, which were believed to help the deceased in the afterlife.](stop:)]
+  
+  (live: 9s)[(t8n:&quot;dissolve&quot;)[He was the Divine Father of Amun and the Chief Warehouse Keeper of Amon-Ra. This means he played a crucial role in the religious and economic life of ancient Egypt.](stop:)]
+  
+  (live: 11s)[(t8n:&quot;dissolve&quot;)[Now, are you ready to answer a question about the funerary papyrus?](stop:)]
+  
+  [[I&#39;m ready!-&gt;Question2]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/bgintroele.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="63" name="Intro0" tags="speech" position="3025,725" size="100,100">&lt;div style=&quot;line-height: 1.2&quot;&gt;(font:&#39;Papyrus&#39;)[Brave adventurer, I need your help. 
+
+I am Djedkhonsuiufankh, and this is the Incantation Scroll that was inside my sarcophagus. But it is torns and missing parts. 
+With your help, we will both be able to make Pep go away. I will finally rest in peace, and you can go on with your journey.
+Look closely at the exhibition. The scroll is very well preserved, but still, some sentences have blank spots.
+  
+You must solve puzzles and answer questions about Egyptian mythology to reveal these words.]&lt;/div&gt;
+  
+  [[I’m ready! What’s the first question?|intro1]]
+&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/diji1.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+&lt;/div&gt;
+  &lt;audio autoplay&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/Scroll.wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="64" name="intro1" tags="" position="3025,850" size="100,100">(live: 0.1s)[(t8n:&quot;dissolve&quot;)[As of right now you are in a journey through the IX and VIII centuries B.C., and my friend, you understand I am old and I need your help.](stop:)]
+  
+  (live: 1.5s)[(t8n:&quot;dissolve&quot;)[This scroll is a powerful artifact, crafted thousands of years ago, designed to defeat the demon snake Pep. However, time has taken its toll, and the scroll is now in pieces, its powerful incantations scattered and incomplete.](stop:)]
+  
+  (live: 3s)[(t8n:&quot;dissolve&quot;)[I need you to help me figure out how to put it back together. You’ll have some options, and you need to choose the one that you deem fits better.](stop:)]
+  
+  (live: 5s)[(t8n:&quot;dissolve&quot;)[Will you help me?](stop:)]
+  
+  (live: 6s)[(t8n:&quot;dissolve&quot;)[Let&#39;s defeat Pep!](stop:)]
+  
+  [[I&#39;m ready!-&gt;Question1]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/bgintroele.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="65" name="Question1" tags="elena" position="3150,850" size="100,100">&lt;style&gt; 
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 20px 15px;
+    }
+    
+    .image-container img {
+width: auto;
+height: auto;
+    margin: 5px;
+    max-width: 100%; 
+    }
+    &lt;/style&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollmeno3.png?raw=true&quot; width=&quot;700&quot;&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: center&quot;&gt;What is the correct fragment?&lt;/div&gt;
+(set:$answer1 to &quot;3&quot;)(set:$iscorrect1 to false)(input: bind $guess1,&quot;=X=&quot;)
+(align: &quot;==&gt;&lt;==&quot;)[[[submit answer|2]]]
+&lt;div class=&quot;image-container&quot;&gt;
+[1.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment1.jpg?raw=true&quot;&gt;]]
+[2.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment2.jpg?raw=true&quot;&gt;]]
+[3.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment3.jpg?raw=true&quot;&gt;]]
+[4.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment4.jpg?raw=true&quot;&gt;]]
+[5.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment5.jpg?raw=true&quot;&gt;]]
+[6.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment6.jpg?raw=true&quot;&gt;]]
+    &lt;/div&gt;
+ &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  </tw-passagedata><tw-passagedata pid="66" name="Question2" tags="elena" position="3150,975" size="100,100">(set: $ShowQuestions to true)
+  
+  (if: $ShowQuestions)[
+  What is the significance of the funerary papyrus of Djedkhonsuiufankh?
+  * [[It tells the story of how to grow crops-&gt;A]]
+  * [[It contains magic spells to help in the afterlife-&gt;B]]
+  * [[It is a map to hidden treasures-&gt;C]]
+  ]
+  
+  (set: $Options to (dm:
+    &quot;A&quot;, &quot;It tells the story of how to grow crops&quot;,
+    &quot;B&quot;, &quot;It contains magic spells to help in the afterlife&quot;,
+    &quot;C&quot;, &quot;It is a map to hidden treasures&quot;,
+  ))
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/indeciso.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="67" name="Question solved2" tags="" position="4125,975" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
+  Successfully matching all pairs reveals the word 
+  (link: &quot;hidden word:&quot;)+(text-colour:#c85656)[
+  RA  
+  [[Let&#39;s go on!-&gt;intro3]]
+  ]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/congratulazioni.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="68" name="intro3" tags="" position="3025,1100" size="100,100">(live: 0.1s)[(t8n:&quot;dissolve&quot;)[Welcome back, young adventurer! Did you know that Ra, the sun god, has to battle the demon snake Pep every night to ensure the sun rises again?](stop:)]
+  
+  (live: 1.5s)[(t8n:&quot;dissolve&quot;)+(text-colour:#c85656)[Really? That sounds like a tough battle. Does Ra have any help?](stop:)]
+  
+  (live: 3s)[(t8n:&quot;dissolve&quot;)[Yes, indeed! Ra is not alone in his fight. He has powerful allies who assist him in battling Pep. One of his main helpers is known for their strength and bravery.](stop:)]
+  
+  (live: 5s)[(t8n:&quot;dissolve&quot;)+(text-colour:#c85656)[That sounds interesting. Who is this helper?](stop:)]
+  
+  (live: 7s)[(t8n:&quot;dissolve&quot;)[Let’s see if you can figure it out. Here’s the question.](stop:)]
+  
+  [[I&#39;m ready!-&gt;Question3]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/bgintroele.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="69" name="Question3" tags="elena" position="3150,1100" size="100,100">(set: $ShowQuestions to true)
+  (if: $ShowQuestions)[
+  Who assists Ra in his battles against Pep?
+  * [[Sekhmet-&gt;E]]
+  * [[Thoth-&gt;F]]
+  * [[Bastet-&gt;G]]
+  * [[Set-&gt;H]]
+  ]
+  
+  (set: $Options to (dm:
+    &quot;E&quot;, &quot;Sekhmet&quot;,
+    &quot;F&quot;, &quot;Thoth&quot;,
+    &quot;G&quot;, &quot;Bastet&quot;,
+    &quot;H&quot;, &quot;Set&quot;
+  ))
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/indeciso.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="70" name="A" tags="" position="3525,975" size="100,100">
+  Wrong! Try again. [[Go back-&gt;Question2]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="71" name="B" tags="" position="3650,975" size="100,100">Correct! Great job! You&#39;ve solved the question. Now you can discover a part of the Pharaoh&#39;s secret message.
+  [[Find out the hidden word!-&gt;Question solved2]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsup.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="72" name="First display (INTRO)" tags="room" position="700,350" size="100,100">//You are activating the first display.//
+
+You are going to be introduced to the story of Amun.
+
+Please, look at the indications on the displays along the exhibition to follow the correct path.
+
+&lt;div style=&quot;text-align: center&quot; id=&quot;language-selection&quot;&gt;
+  &lt;label for=&quot;language&quot;&gt;Choose the language:&lt;/label&gt;
+  &lt;select id=&quot;language&quot; name=&quot;language&quot;&gt;
+  	&lt;option value=&quot;none&quot;&gt;-- Select a language --&lt;/option&gt;
+    &lt;option value=&quot;it&quot;&gt;Italian&lt;/option&gt;
+    &lt;option value=&quot;en&quot;&gt;English&lt;/option&gt;
+    &lt;option value=&quot;es&quot;&gt;Spanish&lt;/option&gt;
+    &lt;option value=&quot;fr&quot;&gt;French&lt;/option&gt;
+    &lt;option value=&quot;de&quot;&gt;German&lt;/option&gt;
+  &lt;/select&gt;
+&lt;br&gt;
+  (link: &quot;Select&quot;)[
+    (goto: &quot;INTRODUCTION - STORY STARTS&quot;)
+  ]
+&lt;/div&gt;
+&lt;style&gt;
+  #language-selection {
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+option {
+	color: black;
+}
+
+  button {
+    width: 100%;
+    padding: 7px;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+&lt;/style&gt;
+Note: This is a prototype.
+Currently, the experience is only implemented in English.</tw-passagedata><tw-passagedata pid="73" name="D" tags="" position="3900,975" size="100,100">Wrong! Try again. [[Go back-&gt;Question2]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="74" name="Question solved3" tags="" position="4125,1100" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
+  Successfully matching all pairs reveals the word 
+  (link: &quot;hidden word:&quot;)+(text-colour:#c85656)[
+  BANISH  
+  [[Let&#39;s go on!-&gt;Intro4]]
+  ]
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/congratulazioni.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="75" name="spellcomplete" tags="" position="4125,1350" size="100,100">(live: 0.1s)[(t8n:&quot;dissolve&quot;)[Congratulations, young adventurer!](stop:)]
+  
+  (live: 1.5s)[(t8n:&quot;dissolve&quot;)[You&#39;ve completed the spell to free Amun from Pep.](stop:)]
+  
+  (live: 2s)[(t8n:&quot;dissolve&quot;)[Let&#39;s recite the incantation together:](stop:)]
+  
+  (live: 3s)[(t8n:&quot;dissolve&quot;)+(text-colour:#c85656)[&quot;By the light of Ra, I banish the darkness of Pep.&quot; ](stop:)]
+  
+  (live: 3s)[(t8n:&quot;dissolve&quot;)[Well done! Amun is now free to go on and almost ready to go back to the present, thanks to you!](stop:)]
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/pepscappa.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;
+[[Continue-&gt;papyrus closure]]</tw-passagedata><tw-passagedata pid="76" name="E" tags="" position="3525,1100" size="100,100">Wrong! Try again. [[Go back-&gt;Question3]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="77" name="F" tags="" position="3650,1100" size="100,100">Wrong! Try again. [[Go back-&gt;Question3]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="78" name="G" tags="" position="3775,1100" size="100,100">Wrong! Try again. [[Go back-&gt;Question3]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="79" name="H" tags="" position="3900,1100" size="100,100">Correct! Great job! You&#39;ve solved the question. Now you can discover a part of the Pharaoh&#39;s secret message.
+  [[Find out the hidden word!-&gt;Question solved3]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsup.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="80" name="Intro4" tags="" position="3025,1225" size="100,100">(live: 0.1s)[(t8n:&quot;dissolve&quot;)[Friend, this scroll tells the story of Ra&#39;s perilous journey through the underworld. Every night, Ra battles the forces of chaos, led by the demon snake Pep. ](stop:)]
+  
+  (live: 1.5s)[(t8n:&quot;dissolve&quot;)+(text-colour:#c85656)[What do we need to do?](stop:)]
+  
+  (live: 2s)[(t8n:&quot;dissolve&quot;)[Listen carefully to the story.](stop:)]
+  
+  (live: 3s)[(t8n:&quot;dissolve&quot;)[As Ra travels through the dark underworld each night, he faces many dangers. The greatest of these is Pep, the demon snake who seeks to devour Ra and plunge the world into eternal darkness.](stop:)]
+  
+  (live: 4s)[(t8n:&quot;dissolve&quot;)[However, Ra is not alone in his nightly battle. One god, in particular, is known for assisting him against Pep.](stop:)]
+  
+  (live: 4.5s)[(t8n:&quot;dissolve&quot;)[But who is it?](stop:)]
+  
+  Go to the [[next passage-&gt;Question4]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/bgintroele.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="81" name="Question4" tags="elena" position="3150,1225" size="100,100">(set: $ShowQuestions to true)
+  (if: $ShowQuestions)[
+  Which book contains spells to protect the dead in the afterlife?
+  * [[Book of Life-&gt;I]]
+  * [[Book of the Dead-&gt;L]]
+  * [[Book of Shadows-&gt;M]]
+  * [[Book of Secrets-&gt;N]]
+  ]
+  
+  (set: $Options to (dm:
+    &quot;I&quot;, &quot;Book of Life&quot;,
+    &quot;L&quot;, &quot;Book of the Dead&quot;,
+    &quot;M&quot;, &quot;Book of Shadows&quot;,
+    &quot;N&quot;, &quot;Book of Secrets&quot;
+  ))
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/indeciso.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="82" name="I" tags="" position="3525,1225" size="100,100">Wrong! Try again. [[Go back-&gt;Question4]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="83" name="L" tags="" position="3650,1225" size="100,100">Correct! Great job! You&#39;ve solved the question. Now you can discover a part of the Pharaoh&#39;s secret message.
+  [[Find out the hidden word!-&gt;Question solved4]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsup.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="84" name="M" tags="" position="3775,1225" size="100,100">Wrong! Try again. [[Go back-&gt;Question4]]
+  
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="85" name="N" tags="" position="3900,1225" size="100,100">Wrong! Try again. [[Go back-&gt;Question4]]
+  
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="86" name="Question solved4" tags="" position="4125,1225" size="100,100">(set: _comment to &quot;link with action when the game is done&quot;)
+  Successfully matching all pairs reveals the word 
+  (link: &quot;hidden word:&quot;)+(text-colour:#c85656)[
+  DARKNESS  
+  [[Let&#39;s go on!-&gt;spellcomplete]]
+  ]
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/congratulazioni.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="87" name="papyrus start" tags="" position="3025,600" size="100,100">(set: _comment to &quot;START&quot;)
+  
+  (live: 0.1s)[(t8n:&quot;dissolve&quot;)[Welcome to The Battle with Pep!](stop:)]
+  
+  (live: 1.5s)[(t8n:&quot;dissolve&quot;)[Your mission is to help Amun gather knowledge from the funerary papyrus of Djedkhonsuiufankh and learn an incantation to defeat Pep, the demon snake, and return home safely. ](stop:)]
+  
+  (live: 2.5s)[(t8n:&quot;dissolve&quot;)[The papyrus is a crucial artifact connected to the &quot;Book of the Dead&quot; and the myth of Ra and Pep.](stop:)]
+  
+  (live: 3.5s)[(t8n:&quot;dissolve&quot;)[ Are you ready to explore the mysteries of ancient Egypt?](stop:)]
+  
+  [[Get started-&gt;Intro0]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/papyrus.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="88" name="C" tags="" position="3775,975" size="100,100">Wrong! Try again. [[Go back-&gt;Question2]]
+  
+  
+  &lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/thumbsdown.png?raw=true&quot;);
+  background-size:cover;
+  background-position: center;
+  }
+  
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="89" name="Explanation2" tags="" position="1975,1100" size="100,100">&lt;style&gt;
+
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/isis3.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Osiris&#39;s wife, the goddess Isis, was heartbroken. With the help of her sister Nephtys, she explored all of Egypt to find her spouse&#39;s body.
+
+    Isis and Nepthys manged to find all the pieces of Osiris&#39; body. They wrapped them around bandages and performed a powerfull spell that brougth Osiris back to life. 
+
+    Osiris was the first mummy and after his resurrection, he became the god of the Underworld to help people start a new life after their death.
+    
+    [[Continue |Explanation3]]</tw-passagedata><tw-passagedata pid="90" name="Identify the gods" tags="" position="2000,1250" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .image-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 15px 20px 15px;;
+    }
+    
+    .image-container img {
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+    &lt;/style&gt;
+    Now that you&#39;ve heard this story, let&#39;s test your knowledge. Choose an image of a diety and find clues to discover their identity:
+    
+    &lt;div class=&quot;image-container&quot;&gt;
+      [[ &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/osiris.jpg&quot;&gt; |image1]]
+      [[ &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/isis.jpg&quot;&gt; |image2]]
+      [[ &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/horus4.jpg&quot;&gt; |image3]]
+    &lt;/div&gt;
+    
+    
+    
+    
+    
+    
+    
+    </tw-passagedata><tw-passagedata pid="91" name="horus" tags="" position="1675,1250" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+    
+    [[Try again. |image1]]</tw-passagedata><tw-passagedata pid="92" name="thoth" tags="" position="1675,1375" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+    
+    [[Try again. |image1]]</tw-passagedata><tw-passagedata pid="93" name="osiris" tags="" position="1675,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Yes, you are correct!
+    
+    Osiris was the right king of Egypt but he was usurped and killed by his brother Seth. After his wife Isis brought him back to life, he became the god of the afterlife. As a symbol of hope and life after death, Osiris was also associated with the cycles in nature, like the growth&#39;s of vegetation and the flooding of the Nile. 
+    
+    [[Let&#39;s identify another deity!|Identify the gods]]</tw-passagedata><tw-passagedata pid="94" name="image1" tags="" position="1825,1250" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/osiris.jpg&quot; width=&quot;300&quot; heigth=&quot;200&quot;&gt;
+    
+    [[Osiris, god of the afterlife and resurrection |osiris]]
+    [[Horus, god kingship and power |horus]]
+    [[Thoth, god of wisdom and knowledge |thoth]]
+    
+    </tw-passagedata><tw-passagedata pid="95" name="image2" tags="" position="2000,1375" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/isis.jpg&quot; width=&quot;300&quot; heigth=&quot;200&quot;&gt;
+    
+    [[Nephthys, goddess of death and night |nephthys]]
+    [[Hator, goddess of love and motherhood|hator]]
+    [[Isis, goddess of magic and healing |isis]]</tw-passagedata><tw-passagedata pid="96" name="nephthys" tags="" position="1825,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+    
+    [[Try again. |image2]]</tw-passagedata><tw-passagedata pid="97" name="hator" tags="" position="2000,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+    
+    [[Try again. |image2]]</tw-passagedata><tw-passagedata pid="98" name="isis" tags="" position="2150,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Yes, you are correct!
+    
+   Isis was very powerful and skilled in magic. She was believed to help the dead enter the afterlife as she had helped Osiris. People invoked her for healing spells, temple rites and funerary practices. 
+   
+    [[Let&#39;s identify another deity!|Identify the gods]]</tw-passagedata><tw-passagedata pid="99" name="image3" tags="" position="2200,1250" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/horus4.jpg&quot; width=&quot;300&quot; heigth=&quot;200&quot;&gt;
+    
+    [[Seth, god of deserts and chaos |seth]]
+    [[Horus, god kingship and power |horus2]]
+    [[Osiris, god of the afterlife and resurrection |osiris2]]</tw-passagedata><tw-passagedata pid="100" name="horus2" tags="" position="2350,1250" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Yes, you are correct!
+    
+    Horus is the protector of the pharaoh. He&#39;s traditionally depicted as a man with a falcon head and a red and white corwn, symbol of kingship over the entire kingdom of Egypt. After he defeated his uncle Seth to avange his father Osiris, Horus became the new king of Egypt and restored order.  
+
+    Congratulations! You identified all the deities. 
+
+    [[One last question! |Horus Eye]]</tw-passagedata><tw-passagedata pid="101" name="seth" tags="" position="2350,1375" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+    
+    [[Try again. |image3]]</tw-passagedata><tw-passagedata pid="102" name="osiris2" tags="" position="2300,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+    
+    [[Try again. |image3]]</tw-passagedata><tw-passagedata pid="103" name="Horus Eye" tags="" position="2525,1250" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; /* add this to allow horizontal scrolling */
+        max-height: 100%; /* add this to allow vertical scrolling */
+    }
+    &lt;/style&gt;
+    Wow, you are becoming an expert in egyptian culture! One last question: what would you use this symbol for?
+    
+    &lt;img src=&quot;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/eye_of_horus.jpg&quot; width=&quot;300&quot; heigth=&quot;200&quot;&gt;
+    
+    
+    [[To get protection |protection]]
+    [[To cause chaos |chaos]]
+    [[To gain power |power]]
+    </tw-passagedata><tw-passagedata pid="104" name="protection" tags="" position="2750,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Yes, this is the correct answer!
+    
+    Congratulation! You can go on and discover how Amun&#39;s adventure continues. [[Let&#39;s go! |Story3]]</tw-passagedata><tw-passagedata pid="105" name="chaos" tags="" position="2450,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    No, this is not the rigth answer.
+    
+    [[Try again |Horus Eye]]</tw-passagedata><tw-passagedata pid="106" name="power" tags="" position="2600,1525" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    No, this is not the rigth answer.
+    
+    [[Try again |Horus Eye]]</tw-passagedata><tw-passagedata pid="107" name="Story2" tags="" position="2025,600" size="100,100">(set: _comment to &quot;START&quot;)
+   &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* add this to allow horizontal scrolling */
+    max-height: 100%; /* add this to allow vertical scrolling */
+}
+&lt;/style&gt;
+    Amun enters in a beautifully decorated chamber. He looks around, amazed by the inscriptions and the paintings of the gods on the walls. 
+
+    At the center of the room there is a big sarcophagus covered with symbols. On top of the case, he reads the name of its owner: &quot;Irinimempu&quot;. 
+
+    &lt;img src=&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/coffin2.jpg&#39; width=&quot;700&quot; heigth=&quot;500&quot;&gt;
+
+    He wonders why the God of the Dead lead him into that place. The reason must be the sarcophagus. Amun decides to inspect it and discover what mysteries it hydes...
+
+    [[Continue |Symbol1]]</tw-passagedata><tw-passagedata pid="108" name="Story4" tags="" position="2750,1100" size="100,100">    &lt;style&gt;
+
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/snake_monster.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+
+    A huge snake with red eyes jumps out of the corridor and tries to attack Amun!
+
+    Amun throws himself to the side to avoid the monster&#39;s attack. His heart beats like crazy.  Terrified, Amun runs away from the room, chased by the snake.
+
+    What will happen next?
+    
+    [[Next-&gt;Fourth display]]</tw-passagedata><tw-passagedata pid="109" name="Explanation1" tags="" position="1825,1100" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/osiris3.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+   Once upon a time, the god Osiris was the rigth king of Egypt and he ruled in peace an fairness. 
+
+    But everything changed when his brother Seth started to be envious.
+
+    Seth wanted to become king, so he killed Osiris, cut his body into pieces and scattered them around Egypt.
+
+    [[Continue|Explanation2]]</tw-passagedata><tw-passagedata pid="110" name="Explanation3" tags="" position="2125,1100" size="100,100">&lt;style&gt;
+    
+    body {
+        background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/horus5.jpg&#39;);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &lt;/style&gt;
+    Unfortunately Seth was still king.
+
+    Horus, son of Osiris, decided to get revange for his father. He fought Seth in an epic battle. Seth was very strong and wounded Horus in the eye. But Horus didn&#39;t give up and fought even harder until he finally defeated Seth.
+
+    Horus restored order and peace in Egypt and became the new king of the nation. The god Thot heald his eye, and from that moment Hours&#39;eyes became a symbol of well-being, healing and protection.
+    
+    [[Continue |Identify the gods]]</tw-passagedata><tw-passagedata pid="111" name="sarcophagus start" tags="" position="1875,600" size="100,100">(set: _comment to &quot;START&quot;)
+&lt;div style=&quot;text-align: center&quot;&gt;Amun is surrounded by a blinding light. 
+    He doesn&#39;s see anything.
+    
+    But wait!
+    
+    The ligth starts to fade away...
+&lt;div class=&quot;video-background&quot;&gt;&lt;video class=&quot;bg-video&quot; autoplay loop muted src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/video/light-spark.mp4&quot; type=&quot;video/mp4&quot;/&gt;
+&lt;/div&gt;
+    [[Continue|Story2]]&lt;/div&gt;
+    </tw-passagedata><tw-passagedata pid="112" name="papyrus closure" tags="" position="4125,1500" size="100,100">&lt;div style=&quot;text-align: center&quot;&gt;Shadows danced along the walls, revealing glimpses of elaborate carvings and inscriptions.
+
+As Amun turned a corner, his eyes widened at the sight of a peculiar glow emanating from a niche in the wall. Intrigued, he approached cautiously. 
+
+There, nestled among the dust and cobwebs, was a magnificent artifact: a black stone slab etched with intricate hieroglyphs and mysterious images. 
+
+It seemed to pulse with a mystical energy, beckoning Amun closer.
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/inside-BG.jpeg?raw=true&quot;);
+background-size:cover;
+background-position: center;
+}
+
+&lt;/style&gt;
+[[Continue-&gt;Fifth display]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="113" name="Introduction to the Artifact" tags="" position="3750,1675" size="100,100">&lt;div style=&quot;text-align: center&quot;&gt;The artifact just encountered by Amun seemed to tell a story, a tale from ancient times.
+
+He gently brushed away the centuries-old dust, revealing the face of Nectanebo I, the heroic pharaoh known for his wisdom and bravery. 
+
+Amun felt a connection to this ancient world, as if the artifact itself was sharing its secrets with him.
+
+The realization hit him: this stone slab was not just a relic; it was a gateway to understanding the past. 
+
+Amun knew he had to uncover its story, not just to find his ball, but to honor the history it represented.
+&lt;style&gt;
+
+tw-story {
+background-image:url(&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/img/bg3.jpeg?raw=true&quot;);
+background-size:cover;
+}
+
+&lt;/style&gt;
+[[Continue-&gt;Pharaoh Nectanebo I]]&lt;/div&gt;
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="114" name="2" tags="" position="3275,850" size="100,100">(if:$guess1 is $answer1)
+[(set:$iscorrect1 to true)
+Well done!
+[[next question|3]]]
+(else:)
+[This is wrong! Try again! [[go back|Question1]]]
+
+
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  </tw-passagedata><tw-passagedata pid="115" name="3" tags="elena" position="3400,850" size="100,100">&lt;style&gt; 
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 20px 15px;
+    }
+    
+    .image-container img {
+width: auto;
+height: auto;
+    margin: 5px;
+    max-width: 100%; 
+    }
+    &lt;/style&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollmeno2.png?raw=true&quot; width=&quot;700&quot;&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: center&quot;&gt;What is the correct fragment?&lt;/div&gt;
+(set:$answer2 to &quot;4&quot;)
+(set:$iscorrect2 to false)
+(input: bind $guess2,&quot;=X=&quot;)
+(align: &quot;==&gt;&lt;==&quot;)[[[submit answer|4]]]
+
+&lt;div class=&quot;image-container&quot;&gt;
+[1.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment4.jpg?raw=true&quot;&gt;]]
+[2.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment2.jpg?raw=true&quot;&gt;]]
+[3.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment6.jpg?raw=true&quot;&gt;]]
+[4.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment5.jpg?raw=true&quot;&gt;]]
+[5.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment1.jpg?raw=true&quot;&gt;]]
+[6.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment3.jpg?raw=true&quot;&gt;]]
+    &lt;/div&gt;
+
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="116" name="4" tags="" position="3525,850" size="100,100">(if:$guess2 is $answer2)
+[(set:$iscorrect2 to true)
+Well done!
+[[next question|5]]]
+(else:)
+[This is wrong! Try again!
+[[go back|3]]]
+
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="117" name="5" tags="elena" position="3650,850" size="100,100">&lt;style&gt; 
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 20px 15px;
+    }
+    
+    .image-container img {
+width: auto;
+height: auto;
+    margin: 5px;
+    max-width: 100%; 
+    }
+    &lt;/style&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollmeno1.png?raw=true&quot; width=&quot;700&quot;&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: center&quot;&gt;What is the correct fragment?&lt;/div&gt;
+(set:$answer3 to &quot;1&quot;)(set:$iscorrect3 to false)(input: bind $guess3,&quot;=X=&quot;)
+(align: &quot;==&gt;&lt;==&quot;)[[[submit answer|6]]]
+&lt;div class=&quot;image-container&quot;&gt;
+[1.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment4.jpg?raw=true&quot;&gt;]]
+[2.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment6.jpg?raw=true&quot;&gt;]]
+[3.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment1.jpg?raw=true&quot;&gt;]]
+[4.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment3.jpg?raw=true&quot;&gt;]]
+[5.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment5.jpg?raw=true&quot;&gt;]]
+[6.[&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollfragment2.jpg?raw=true&quot;&gt;]]
+    &lt;/div&gt;
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="118" name="6" tags="" position="3775,850" size="100,100">(if:$guess3 is $answer3)
+[(set:$iscorrect3 to true)
+Well done!
+[[next question|7]]]
+(else:)
+[This is wrong! Try again!
+[[go back|5]]]
+
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/raw/main/audio/synthesized_audio%20(2).wav?raw=true&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="119" name="7" tags="elena" position="3900,850" size="100,100">&lt;style&gt;
+    
+    .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 20px 15px;
+    }
+    
+    .image-container img {
+      width: calc(33% - 20px);
+    height: auto;
+    margin: 5px;
+    max-width: 150%; 
+    }
+    &lt;/style&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://github.com/4-SEASONS/DHDK-DigitalHeritage-gp24/blob/main/img/scroll-fragments/scrollintero.png?raw=true&quot; width=&quot;800&quot;&gt;&lt;/p&gt;
+You solved the game! Now the funerary papyrus is complete!
+[[Go on|Question solved1]]</tw-passagedata><tw-passagedata pid="120" name="Symbol1" tags="" position="2175,600" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* add this to allow horizontal scrolling */
+    max-height: 100%; /* add this to allow vertical scrolling */
+}
+&lt;/style&gt;
+
+    The first thing Amun notices is a particular symbol: a series of rectangular shapes enclosed one inside the other
+
+    &lt;img src=&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_door2.jpg&#39; width=&quot;300&quot; heigth=&quot;200&quot;&gt;
+
+    It remainds him of something he&#39;s already seen... 
+
+    Help Amun remember what does the symbol mean. It&#39;s a...:
+
+    [[Magic box |magic box]]
+    [[Fake door |fake door]]
+    [[Open window |open window]]</tw-passagedata><tw-passagedata pid="121" name="magic box" tags="" position="2325,650" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+
+    [[Try again. |Symbol1]]</tw-passagedata><tw-passagedata pid="122" name="fake door" tags="" position="2450,550" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Good job! You helped Amun.
+
+    &quot;I remember now!&quot; Amun exclaimed &quot;It&#39;s a fake door. It looks like the one that Sameri showed me, but this one is painted on the sarcophagus. I also remember the purpose of it: it is...&quot;
+
+    [[To allow the soul of the deceased to exit and enter the tomb |exit for the soul]]
+    [[To alllow other spirits to visit the deceased |spirit visit]]</tw-passagedata><tw-passagedata pid="123" name="open window" tags="" position="2325,450" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+
+    [[Try again. |Symbol1]]</tw-passagedata><tw-passagedata pid="124" name="exit for the soul" tags="" position="2600,650" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    &quot;It allows the soul of the deceased person to go out in the world and come back to his tomb as they please&quot; said Amun, happy to see that he learned a lot. 
+
+    But what do the other symbols mean?
+
+    [[Continue|Symbol2]]</tw-passagedata><tw-passagedata pid="125" name="spirit visit" tags="" position="2600,500" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+
+    [[Try again. |fake door]]</tw-passagedata><tw-passagedata pid="126" name="Symbol2" tags="" position="2600,825" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* add this to allow horizontal scrolling */
+    max-height: 100%; /* add this to allow vertical scrolling */
+}
+&lt;/style&gt;
+
+    Next to the fake door there are images of food. 
+
+    &lt;img src=&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_food.jpg&#39; width=&quot;700&quot; heigth=&quot;500&quot;&gt;
+
+    What was the purpose of food in funerary paintings? two of the following options are true. Which ones?
+
+    1) Food is an offering for the gods
+    2) Food provide nourishment to the deceased 
+    3) Food is a sacrifice to keep evil spirits at bay
+
+    [[1 and 2 are true  |1and2]]
+    [[2 and 3 are true |2and3]]
+    [[3 and 1 are true |3and1]]</tw-passagedata><tw-passagedata pid="127" name="1and2" tags="" position="2450,825" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Yes, you are right!
+
+    Food was considered both an offering to the gods and as well as a source of nourishment for the deceased.
+
+    [[Continue |Symbol3]]</tw-passagedata><tw-passagedata pid="128" name="2and3" tags="" position="2475,1025" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! Those are not the rigth answers. 
+
+    [[Try again. |Symbol2]]</tw-passagedata><tw-passagedata pid="129" name="3and1" tags="" position="2600,1025" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! Those are not the rigth answers. 
+
+    [[Try again. |Symbol2]]</tw-passagedata><tw-passagedata pid="130" name="Symbol3" tags="" position="2300,825" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* add this to allow horizontal scrolling */
+    max-height: 100%; /* add this to allow vertical scrolling */
+}
+&lt;/style&gt;
+    Amun goes on to examine the sarcophagus and notices a detail in the corner. There are what appear to be objects for beauty and personal care: a mirror, a jar with ointment for the body, a jar with eyedrops and a small case for clothes.
+
+    &lt;img src=&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/beauty_products.jpg&#39; width=&quot;300&quot; heigth=&quot;400&quot;&gt;
+
+    Why these objects are depicted on the sarcophagus?
+
+    [[They were the deceased favourite objects|favourite things]]
+    [[The deceased was very vain |vanity]]
+    [[So that the deceased can continue to take care of their body in the afterlife |care]]</tw-passagedata><tw-passagedata pid="131" name="favourite things" tags="" position="1850,750" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+
+    [[Try again. |Symbol3]]</tw-passagedata><tw-passagedata pid="132" name="vanity" tags="" position="1975,825" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+    Oh no! That&#39;s not the rigth answer. 
+
+    [[Try again. |Symbol3]]</tw-passagedata><tw-passagedata pid="133" name="care" tags="" position="2100,925" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* add this to allow horizontal scrolling */
+    max-height: 100%; /* add this to allow vertical scrolling */
+}
+&lt;/style&gt;
+    Yes, you are right!
+
+    Personal care was very important for egyptians. They believed that the care and protection of the body must be carried on in the afterlife.
+
+    [[Continue |Symbol4]]</tw-passagedata><tw-passagedata pid="134" name="Symbol4" tags="" position="1825,950" size="100,100">    &lt;style&gt;
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/sarcophagus_tomb.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* add this to allow horizontal scrolling */
+    max-height: 100%; /* add this to allow vertical scrolling */
+}
+&lt;/style&gt;
+    Amun notices the last symbol, positioned between the food and the beauty products: two eyes circled by black make-up staring at him.
+
+    &lt;img src=&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/horus_eyes.jpg&#39; width=&quot;300&quot; heigth=&quot;200&quot;&gt;
+
+    As he examines them, Amun feels their incredible magical power. A memory emerges in his mind: an old story his mum used to tell him...
+
+    [[Continue |Explanation1]]</tw-passagedata><tw-passagedata pid="135" name="Story3" tags="" position="2775,1300" size="100,100">&lt;style&gt;
+
+body {
+    background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+&lt;/style&gt;
+Amun is proud of himself for having learned all these things about Egyptian funerary practices. He feels that he is fulfilling the mission entrusted to him by the God of the Dead and is determined to complete it. 
+
+He is ready to proceed on his journey, but a bad feeling suddenly arises... He feels someone - or something - looking at him.
+
+A hiss comes from a nearby corridor...
+
+[[Continue |Story4]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
