@@ -779,7 +779,7 @@ You found the solution! You have identified all the guardians.
 
 Continue to the next step to reveal the Pharaoh&#39;s message.
 
-[[Continue-&gt;Hidden Message]] &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="false door" tags="" position="1225,675" size="100,100">
+[[Continue-&gt;Hidden Message]] &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="false door" tags="" position="1050,650" size="100,100">
   [**Amun:** Sameri, what is a false door stele?
   
   **Sameri:** It is a very important funerary architecture from my era, Old Kingdom. It is made up of an architrave, lateral uprights and a central part depicting a rolled mat, which must depict a door accessible to the deceased.
@@ -790,6 +790,10 @@ Continue to the next step to reveal the Pharaoh&#39;s message.
   
   [[inspect the hierogliphics|false door-cont]]
   
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  
   &lt;style&gt;
   
   tw-story {
@@ -798,7 +802,7 @@ Continue to the next step to reveal the Pharaoh&#39;s message.
   background-position: center;
   }
   
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="offering" tags="" position="875,675" size="100,100">(set: $a to false) (set: $b to false) (set: $d to false) (set: $e to false) (set: $r to false)
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="offering" tags="" position="700,650" size="100,100">(set: $a to false) (set: $b to false) (set: $d to false) (set: $e to false) (set: $r to false)
   
 [**Sameri:** The funerary offerings could be different things, but the most important offering that is being described in my stele of the false door, are one type of food and one type of beverage. You must guess which two funerary offerings are written on my stele.]
   
@@ -967,7 +971,7 @@ The characters on the stele briefly glowed.
   &lt;/style&gt;</tw-passagedata><tw-passagedata pid="52" name="Sameri-family" tags="" position="775,1475" size="100,100">
   **Amun:** Sameri, is that you in that dinner scene?
   
-  **Sameri:** Yes, Amun, it is me. I was an inspector and an assistant to the pharaoh when I was alive. This stele was dedicated to me, so I am depicted on the center scene. Additionally, on the lower stele, I am also depicted on the left outer panel, on the left inner panel and the bottom center section.
+  **Sameri:** Yes, Amun, it is me. I was an inspector and an assistant to the pharaoh when I was alive. This stele was dedicated to me, so I am depicted on the center scene. Additionally, on the lower stele, I am depicted on the left outer panel, on the left inner panel and the bottom center section as well.
   
   **Amun:** But there are other people as well. Who are they?
   
@@ -998,6 +1002,10 @@ The characters on the stele briefly glowed.
   
   [[Amun noticed a scene on the stele |Sameri-family]]
   
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+  
   &lt;style&gt;
   
   tw-story {
@@ -1005,7 +1013,7 @@ The characters on the stele briefly glowed.
   background-size:cover;
   }
   
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="54" name="family guessing game" tags="" position="1125,1475" size="100,100">(if: $member is in $family and $guesses&#39;s length &lt; 4 )[(set: $guesses to it+(a:$member))Sameri noded.
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="54" name="family guessing game" tags="" position="1125,1475" size="100,100">(if: $member is in $family and $guesses&#39;s length &lt; 4 )[(set: $guesses to it+(a:$member))Sameri nodded.
   
   **Sameri:** Yes, Amun. My $member is depicted on the stele.
   
@@ -1017,7 +1025,7 @@ The characters on the stele briefly glowed.
   [[try again|input-guess]]](else-if: $member is in $family and $guesses&#39;s length &lt;5)
   [(set: $guesses to it + (a:$member))
   
-  Sameri noded.
+  Sameri nodded.
   
   **Sameri:** Yes, Amun. My $member is depicted on the stele.
   
@@ -1033,7 +1041,7 @@ The characters on the stele briefly glowed.
   background-position: center;
   }
   
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="55" name="false door-cont" tags="" position="1050,675" size="100,100">
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="55" name="false door-cont" tags="" position="875,650" size="100,100">
   [Amun noticed the hierogliphics on the stele.
   
   **Amun:** What is written on your stele, Sameri?
@@ -1041,6 +1049,10 @@ The characters on the stele briefly glowed.
   **Sameri:** A very good question, Amun. The hierogliphics contain instructions about the funerary offerings that must be presented so that Anubis, the God of the Dead is satisfied, and lets us continue our journey into the afterlife. For Anubis to be pleased with you, you must figure out what funerary offering is written on the stele.]
   
   [[figure out the funerary offering for Anubis|offering]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
   
   &lt;style&gt;
   
@@ -1069,7 +1081,7 @@ The characters on the stele briefly glowed.
   &lt;/style&gt;</tw-passagedata><tw-passagedata pid="57" name="family-more" tags="" position="1300,1475" size="100,100">
   [**Amun:** Can you tell me more about your family, Sameri?
   
-  **Sameri:** Of course. My father, Urkaptah, was a shopkeeper. He was the one who commissioned this stele for me, he is depicted on the outer right panel. My mother, Henutes, was an acquaintance of the pharaoh and a priestess of Neit. She was well loved and well respected. She is the one across me on the center dining scene, you can also see her on the inner right panel. The remaining women in the inner left panel and the inner right panel are my sisters, and the other men are my brothers. 
+  **Sameri:** Of course. My father, Urkaptah, was a shopkeeper. He was the one who commissioned this stele for me, he is depicted on the outer right panel. My mother, Henutes, was an acquaintance of the pharaoh and a priestess of Neit. She was well loved and well respected. She is the one across me on the center dinner scene, you can also see her on the inner right panel. The remaining women in the inner left panel and the inner right panel are my sisters, and the other men are my brothers. 
   
   **Amun:** Who is the woman next to you on the outer left panel?
   
@@ -1077,6 +1089,9 @@ The characters on the stele briefly glowed.
   
   [[next]]
   
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
   &lt;style&gt;
   
   tw-story {
@@ -1089,7 +1104,7 @@ The characters on the stele briefly glowed.
   
   **Sameri:** It seems like the God of the Dead is pleased with your efforts to learn about the funerary practices of our civilization. This is all the help I can provide you, Amun. You must follow this path and continue your journey. But you must also be careful, there will be dangers on your way through.
   
-  Amun thanked Sameri and started to follow the glowing path. At the end of the path, he noticed a sarcophagus. He walked closer to the sarcophagus and started to inspect it.
+  Amun thanked Sameri and started to follow the glowing path. As he went on, the light got brighter and brighter.
   
   [[finish the section|Third display]]
   
@@ -1116,17 +1131,21 @@ The characters on the stele briefly glowed.
   background-position: center;
   }
   
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="60" name="false door start" tags="" position="1400,675" size="100,100">[Amun approached the tall stone structure. The structure had an upper horizontal section and a bottom rectangular column that looked like a door. 
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="60" name="false door intro" tags="" position="1225,650" size="100,100">[He approached the tall stone structure. The structure had an upper horizontal section and a bottom rectangular column that looked like a door. 
   
-  As he got closer to the monument, a shimmering appeared and came through the door, materializing and taking the shape of a man.
+  Suddenly, the door started to shimmer and a glowing cloud came through the door, materializing and taking the shape of a man.
   
   Amun took a step back, but the man smiled warmly and introduced himself.
   
   **Sameri:** Greetings, Amun. My name is Sameri, and I am the owner of this stele of the false door. The God of the Dead wishes you to learn about the funerary practices throughout Egypt, and my stele is your first objective. Come closer, and I shall help you.
   
-  Amun noded and approached the false door stele.]
+  Amun nodded and approached the false door stele.]
   
   [[ask Sameri about the stele of the false door|false door]]
+  
+  &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
   
   &lt;style&gt;
   
@@ -1692,7 +1711,11 @@ Currently, the experience is only implemented in English.</tw-passagedata><tw-pa
 
     Osiris was the first mummy and after his resurrection, he became the god of the Underworld to help people start a new life after their death.
     
-    [[Continue |Explanation3]]</tw-passagedata><tw-passagedata pid="90" name="Identify the gods" tags="" position="2000,1250" size="100,100">&lt;style&gt;
+    [[Continue |Explanation3]]
+    
+    &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/battle2.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="90" name="Identify the gods" tags="" position="2000,1250" size="100,100">&lt;style&gt;
     
     body {
         background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/background1.jpg&#39;);
@@ -1996,7 +2019,11 @@ img{
 
     He wonders why the God of the Dead lead him into that place. The reason must be the sarcophagus. Amun decides to inspect it and discover what mysteries it hydes...
 
-    [[Continue |Symbol1]]</tw-passagedata><tw-passagedata pid="108" name="Story4" tags="" position="2750,1100" size="100,100">    &lt;style&gt;
+    [[Continue |Symbol1]]
+    
+    &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="108" name="Story4" tags="" position="2750,1100" size="100,100">    &lt;style&gt;
 
 body {
     background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/snake_monster.jpg&#39;);
@@ -2014,7 +2041,11 @@ body {
 
     What will happen next?
     
-    [[Next-&gt;Fourth display]]</tw-passagedata><tw-passagedata pid="109" name="Explanation1" tags="" position="1825,1100" size="100,100">&lt;style&gt;
+    [[Next-&gt;Fourth display]]
+    
+    &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/battle2.mp3#t=00:01:03&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="109" name="Explanation1" tags="" position="1825,1100" size="100,100">&lt;style&gt;
     
     body {
         background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/osiris3.jpg&#39;);
@@ -2031,7 +2062,11 @@ body {
 
     Seth wanted to become king, so he killed Osiris, cut his body into pieces and scattered them around Egypt.
 
-    [[Continue|Explanation2]]</tw-passagedata><tw-passagedata pid="110" name="Explanation3" tags="" position="2125,1100" size="100,100">&lt;style&gt;
+    [[Continue|Explanation2]]
+    
+    &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/battle1.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="110" name="Explanation3" tags="" position="2125,1100" size="100,100">&lt;style&gt;
     
     body {
         background-image: url(&#39;https://raw.githubusercontent.com/4-SEASONS/DHDK-DigitalHeritage-gp24/main/img/horus5.jpg&#39;);
@@ -2048,7 +2083,11 @@ body {
 
     Horus restored order and peace in Egypt and became the new king of the nation. The god Thot heald his eye, and from that moment Hours&#39;eyes became a symbol of well-being, healing and protection.
     
-    [[Continue |Identify the gods]]</tw-passagedata><tw-passagedata pid="111" name="sarcophagus start" tags="" position="1875,600" size="100,100">(set: _comment to &quot;START&quot;)
+    [[Continue |Identify the gods]]
+    
+    &lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/battle2.mp3#t=00:01:03&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="111" name="sarcophagus start" tags="" position="1875,600" size="100,100">(set: _comment to &quot;START&quot;)
 &lt;div style=&quot;text-align: center&quot;&gt;Amun is surrounded by a blinding light. 
     He doesn&#39;s see anything.
     
@@ -2479,7 +2518,32 @@ He is ready to proceed on his journey, but a bad feeling suddenly arises... He f
 
 A hiss comes from a nearby corridor...
 
-[[Continue |Story4]]</tw-passagedata></tw-storydata>
+[[Continue |Story4]]
+
+&lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;</tw-passagedata><tw-passagedata pid="136" name="false door start" tags="" position="1375,650" size="100,100">As Amun continued to walk around this enchanted world, he noticed a path and decided to follow it. The path led to an ancient looking pyramid that is made of gold.
+
+At the entrance of the pyramid, Amun saw his ball. He started running towards it, but almost magically, the ball started rolling on its own, deeper inside the pyramid.
+
+He couldn&#39;t see his red ball, but he noticed a stone structure at the end of the path, and decided to approach it.
+
+[[continue|false door intro]]
+
+&lt;audio autoplay loop&gt;
+    &lt;source src=&quot;https://github.com/colakogluezgi00/test/raw/main/ambient.mp3&quot; type=&quot;audio/wav&quot;&gt;
+  &lt;/audio&gt;
+&lt;style&gt;
+  
+  tw-story {
+  background-image:url(&quot;https://github.com/colakogluezgi00/test/blob/main/nile-river-journey-to-egypt.jpg?raw=true&quot;);
+  background-size:cover;
+  background-position: center top;
+  }
+  
+  &lt;/style&gt;
+  
+  </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
