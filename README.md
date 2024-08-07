@@ -6,6 +6,6 @@ Here you can find the repository of the end-of-the-course project for the integr
 
 ## Contributors:
 * [Valentina Bertelli](https://github.com/)
-* [Elena Binotti](https://github.com/)
+* [Elena Binotti](https://github.com/elena2notti)
 * [Ezgi Çolakoğlu](https://github.com/)
 * [Lucrezia Pograri](https://github.com/lucreziapograri)
